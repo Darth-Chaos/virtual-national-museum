@@ -1,6 +1,7 @@
-[gd_scene load_steps=85 format=3 uid="uid://c3qbeiucc0nkt"]
+[gd_scene load_steps=87 format=3 uid="uid://c3qbeiucc0nkt"]
 
 [ext_resource type="Script" uid="uid://cfn3sxsy3ia47" path="res://scenes/main.gd" id="1_kn4i6"]
+[ext_resource type="PackedScene" uid="uid://bs7phn1cmyl7i" path="res://colorblind_shaderscreen.tscn" id="2_jhtcy"]
 [ext_resource type="Texture2D" uid="uid://dnrbo3fki1110" path="res://assets/textures/wood_normalmap.png" id="2_q60fs"]
 [ext_resource type="Texture2D" uid="uid://dwkqvnh45q8ms" path="res://assets/textures/wood.png" id="3_nqcc7"]
 [ext_resource type="PackedScene" uid="uid://bs2veq45ho714" path="res://scenes/player.tscn" id="3_q60fs"]
@@ -26,6 +27,7 @@
 [ext_resource type="PackedScene" uid="uid://d1k6c6eig8rby" path="res://scenes/canvas_layer.tscn" id="23_wjff0"]
 [ext_resource type="Theme" uid="uid://dgt5fjkytx07d" path="res://assets/resources/menu_theme.tres" id="24_h1rib"]
 [ext_resource type="Script" uid="uid://hdmc6kagbnrk" path="res://scenes/canvas_layer.gd" id="24_kn4i6"]
+[ext_resource type="PackedScene" uid="uid://cthmqphergk6s" path="res://colorblind_optionbutton.tscn" id="26_3jc85"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_o1atq"]
 size = Vector3(15, 1, 30)
@@ -246,6 +248,8 @@ sky = SubResource("Sky_iwi7x")
 
 [node name="Root" type="Node"]
 script = ExtResource("1_kn4i6")
+
+[node name="ColorBlindCanvas" parent="." instance=ExtResource("2_jhtcy")]
 
 [node name="Player" parent="." instance=ExtResource("3_q60fs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.11147, 0)
@@ -664,6 +668,9 @@ theme_override_constants/margin_left = 200
 theme_override_constants/margin_top = 40
 theme_override_constants/margin_right = 200
 theme_override_constants/margin_bottom = 40
+
+[node name="ColorBlindOptions" parent="PauseMenu/MarginContainer" instance=ExtResource("26_3jc85")]
+layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/MarginContainer"]
 layout_mode = 2
