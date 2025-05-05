@@ -1,0 +1,371 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Language: fr\n"
+
+msgid "Enter the Museum"
+msgstr "Entrer dans le Musée"
+
+msgid "Settings"
+msgstr "Paramètres"
+
+msgid "Quit"
+msgstr "Quitter"
+
+msgid "The museum is currently unstaffed. Please refer to signage for information."
+msgstr "Le musée n'a pas d'employé. Veuillez vous référer aux panneaux d'information."
+
+msgid "English"
+msgstr "Anglais"
+
+msgid "Portuguese"
+msgstr "Portugais"
+
+msgid "French"
+msgstr "Français"
+
+msgid "Are you sure you want to Quit?"
+msgstr "Êtes vous sûr•e de vouloir quitter ?"
+
+msgid "Yes"
+msgstr "Oui"
+
+msgid "No"
+msgstr "Non"
+
+msgid "Paused"
+msgstr "En pause"
+
+msgid "Resume"
+msgstr "Reprendre"
+
+msgid "Return to Lobby"
+msgstr "Retourner à l'accueil"
+
+msgid "Enter Exhibit Name"
+msgstr "Entrez le nom de l'exposition"
+
+msgid "Go to Random Exhibit"
+msgstr "Se rendre à une exposition aléatoire"
+
+msgid "Enter exhibit title"
+msgstr "Entrez le titre de l'exposition"
+
+msgid "Confirm"
+msgstr "Confirmer"
+
+msgid "Back"
+msgstr "Retour"
+
+msgid "Exhibit Found: \"\""
+msgstr "Exposition trouvée : \"\""
+
+msgid "OK / Exit"
+msgstr "OK / Quitter"
+
+msgid "VR Controls"
+msgstr "Contrôles VR"
+
+msgid "Restore Default Settings"
+msgstr "Restaurer les paramètres par défaut"
+
+msgid "Movement Style"
+msgstr "Style de mouvement"
+
+msgid "Teleportation (Left Trigger)"
+msgstr "Téléportation (Gachette Gauche)"
+
+msgid "Direct Movement (Left Analog Stick)"
+msgstr "Mouvement direct (Joystick Gauche)"
+
+msgid "Direct Movement Speed"
+msgstr "Vitesse de mouvement direct"
+
+msgid "Camera Rotation Increment (Right Stick)"
+msgstr "Sensibilité de la caméra (Joystick Droit)"
+
+msgid "Smooth Camera Rotation"
+msgstr "Rotation en douceur"
+
+msgid "Preparing Exhibit..."
+msgstr "Préparation de l'exposition..."
+
+msgid "Error Loading Exhibit."
+msgstr "Erreur de chargement de l'exposition."
+
+msgid "Data Settings"
+msgstr "Paramètres de cache"
+
+msgid "Cache"
+msgstr "Cache"
+
+msgid "Clear Cache"
+msgstr "Vider le cache"
+
+msgid "Cache Size Limit"
+msgstr "Taille maximum du cache"
+
+msgid "Automatically limit cache size (on quit)"
+msgstr "Limiter automatiquement la taille du cache (à la fermeture)"
+
+msgid "Graphics Settings"
+msgstr "Paramètres graphiques"
+
+msgid "Render Scale"
+msgstr "Échelle de rendu"
+
+msgid "Fullscreen"
+msgstr "Plein écran"
+
+msgid "Reflection Quality"
+msgstr "Qualité des reflets"
+
+msgid "Enable Reflections"
+msgstr "Activer les reflets"
+
+msgid "Ambient Light Level"
+msgstr "Luminosité ambiante"
+
+msgid "Enable Indirect Lighting (SSIL)"
+msgstr "Activer la lumière indirecte (SSIL)"
+
+msgid "Render Distance"
+msgstr "Distance de rendu"
+
+msgid "Fog"
+msgstr "Brouillard"
+
+msgid "Enable Fog"
+msgstr "Activer le brouillard"
+
+msgid "Enable V-Sync"
+msgstr "Activer la synchronisation verticale"
+
+msgid "Limit FPS"
+msgstr "Limiter les FPS"
+
+msgid "None"
+msgstr "Aucun"
+
+msgid "CRT Filter"
+msgstr "Filtre CRT"
+
+msgid "Audio Settings"
+msgstr "Paramètres audio"
+
+msgid "Global Volume"
+msgstr "Volume global"
+
+msgid "Sound Effects Volume"
+msgstr "Volume des effets"
+
+msgid "Ambience Volume"
+msgstr "Volume de l'environnement"
+
+msgid "Enter VR"
+msgstr "Entrer en VR"
+
+msgid "Snap turning:"
+msgstr "Rotation instantanée :"
+
+msgid "Y axis dead zone"
+msgstr "Zone morte de l'axe Y"
+
+msgid "X axis dead zone"
+msgstr "Zone morte de l'axe X"
+
+msgid "Haptics Scale"
+msgstr "Intensité des vibrations"
+
+msgid "Apply"
+msgstr "Appliquer"
+
+msgid "Reset"
+msgstr "Réinitialiser"
+
+msgid "Height adjust:"
+msgstr "Ajustement de la hauteur :"
+
+msgid "WebXR primary:"
+msgstr "WebXR primaire :"
+
+msgid "Auto"
+msgstr "Auto"
+
+msgid "Thumbstick"
+msgstr "Joystick"
+
+msgid "Trackpad"
+msgstr "Trackpad"
+
+msgid "Open Page in Browser"
+msgstr "Ouvrir la page dans le navigateur"
+
+msgid " - Paused"
+msgstr " - En pause"
+
+msgid "Maximum FPS"
+msgstr "Nombre maximum de FPS"
+
+msgid "Post-Processing Effect"
+msgstr "Effet de post-processing"
+
+msgid "Graphics"
+msgstr "Graphiques"
+
+msgid "Audio"
+msgstr "Audio"
+
+msgid "Data"
+msgstr "Cache"
+
+msgid "Controls"
+msgstr "Contrôles"
+
+msgid "Control Settings"
+msgstr "Paramètres de contrôle"
+
+msgid "Mouse Sensitivity"
+msgstr "Sensibilité de la souris"
+
+msgid "Invert Y-axis"
+msgstr "Inverser l'axe Y"
+
+msgid "Remap Inputs"
+msgstr "Réassigner les entrées"
+
+msgid "Joypad Camera Deadzone"
+msgstr "Zone morte de la caméra de contrôle"
+
+msgid "Technology"
+msgstr "Technology"
+
+msgid "Featured Technology Exhibits"
+msgstr "Featured Technology Exhibits"
+
+msgid "Science"
+msgstr "Science"
+
+msgid "Featured Science Exhibits"
+msgstr "Featured Science Exhibits"
+
+msgid "Geography"
+msgstr "Geography"
+
+msgid "Featured Geography Exhibits"
+msgstr "Featured Geography Exhibits"
+
+msgid "Culture"
+msgstr "Culture"
+
+msgid "Featured Culture Exhibits"
+msgstr "Featured Culture Exhibits"
+
+msgid "Art"
+msgstr "Art"
+
+msgid "Featured Art Exhibits"
+msgstr "Featured Art Exhibits"
+
+msgid "People"
+msgstr "People"
+
+msgid "Featured People Exhibits"
+msgstr "Featured People Exhibits"
+
+msgid "History"
+msgstr "History"
+
+msgid "Featured History Exhibits"
+msgstr "Featured History Exhibits"
+
+msgid "Media"
+msgstr "Media"
+
+msgid "Featured Media Exhibits"
+msgstr "Featured Media Exhibits"
+
+msgid "Search"
+msgstr "Search"
+
+msgid "Featured Search Exhibits"
+msgstr "Featured Search Exhibits"
+
+### scenes/Lobby.tscn Section
+
+msgid ""
+"[b]Welcome to the Museum of All Things![/b]\n"
+"\n"
+"[fill]This museum is different from any you've visited in the physical world, so it may take a moment to get your bearings.[/fill]\n"
+"\n"
+"[b]The Lobby[/b]\n"
+"\n"
+"[fill]Right now you are in the museum's lobby, tailored to give you a pleasant starting point on your visit. If you ever wish to return here, you may simply open your museum menu (via \"Escape,\" \"Start,\" or by hitting \"Y\" on your right-hand controller in Virtual Reality) and select \"Return to Lobby.\"\n"
+"\n"
+"The lobby is divided into areas by subject, which are marked by signs and indicated on the maps in the entry hall behind you. In each of these areas, you will find many hallways into a range of fascinating exhibits.[/fill]"
+msgstr ""
+
+msgid ""
+"[b]Museum Exhibits[/b]\n"
+"\n"
+"[fill]Exhibits are not made by hand-- they are generated procedurally by pulling images and textual data from Wikipedia and Wikimedia commons. This means any topic with a Wikipedia page can also be accessed as an exhibit in this museum!\n"
+"\n"
+"Furthermore, each exhibit contains many hallways connecting it to other exhibits. These hallways are determined based on the links in the current exhibit's Wikipedia article. You can move from exhibit to exhibit endlessly, following your curiosity.\n"
+"\n"
+"If you prefer to go straight to a particular subject, you may access the search terminal, at the end of the entry hall directly behind you. Simply enter your topic of interest into the terminal's interface, and it will create a hallway for you to walk straight there.[/fill]"
+msgstr ""
+"[b]Museum Exhibits[/b]\n"
+"\n"
+"[fill]Exhibits are not made by hand-- they are generated procedurally by pulling images and textual data from Wikipedia and Wikimedia commons. This means any topic with a Wikipedia page can also be accessed as an exhibit in this museum!\n"
+"\n"
+"Furthermore, each exhibit contains many hallways connecting it to other exhibits. These hallways are determined based on the links in the current exhibit's Wikipedia article. You can move from exhibit to exhibit endlessly, following your curiosity.\n"
+"\n"
+"If you prefer to go straight to a particular subject, you may access the search terminal, at the end of the entry hall directly behind you. Simply enter your topic of interest into the terminal's interface, and it will create a hallway for you to walk straight there.[/fill]"
+
+### scenes/menu/TerminalMenu.tscn Section
+
+msgid ""
+"Welcome to the MoAT Custom Exhibit Terminal\n"
+"\n"
+"You may access a specific exhibit by selecting \"Enter Exhibit Name.\" Alternatively, you may ask for a random exhibit.\n"
+"\n"
+"Hit \"E\" on your keyboard to interact with the terminal, or press Y/△ if you are using a controller.\n"
+"\n"
+msgstr ""
+
+msgid "Enter Exhibit Name "
+msgstr ""
+
+msgid "Go to Random Exhibit "
+msgstr ""
+
+msgid ""
+"Enter the title of the exhibit you would like to acccess. A path will be routed and the door will open to the best matching exhibit.\n"
+"\n"
+msgstr ""
+
+msgid "Enter exhibit title"
+msgstr ""
+
+msgid "Confirm"
+msgstr ""
+
+msgid "Back"
+msgstr ""
+
+msgid "Exhibit Found: \"\"\n"
+msgstr ""
+
+msgid ""
+"\n"
+"Proceed to your right to access this exhibit, or return to the terminal's main menu to access a different exhibit.\n"
+"\n"
+msgstr ""
+
+msgid "OK / Exit"
+msgstr ""
+
+msgid ""
+"We were unable to locate the exhibit that you requested. Please try a different exhibit.\n"
+"\n"
+msgstr ""
