@@ -311,6 +311,7 @@ script = ExtResource("4_nqcc7")
 
 [node name="Steps1" type="AudioStreamPlayer" parent="Player"]
 stream = ExtResource("4_f2bte")
+autoplay = true
 
 [node name="Lobby" type="Node3D" parent="."]
 

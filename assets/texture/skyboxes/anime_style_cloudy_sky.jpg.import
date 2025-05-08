@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5h1t3ua43on8"
-path.s3tc="res://.godot/imported/marble21.png-a8c9b3beca395da02e6339b46d03e361.s3tc.ctex"
+uid="uid://d1cv8jvu6b5oe"
+path.bptc="res://.godot/imported/anime_style_cloudy_sky.jpg-ab55608b800c538ea48bef2d646d2c1e.bptc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,21 +11,21 @@ metadata={
 
 [deps]
 
-source_file="res://assets/textures/marble21.png"
-dest_files=["res://.godot/imported/marble21.png-a8c9b3beca395da02e6339b46d03e361.s3tc.ctex"]
+source_file="res://assets/texture/skyboxes/anime_style_cloudy_sky.jpg"
+dest_files=["res://.godot/imported/anime_style_cloudy_sky.jpg-ab55608b800c538ea48bef2d646d2c1e.bptc.ctex"]
 
 [params]
 
 compress/mode=2
-compress/high_quality=false
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/normal_map=1
+compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal="res://assets/textures/marble21.png"
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

@@ -7,6 +7,7 @@ const JUMP_VELOCITY = 4.5
 @onready var neck := $Neck
 @onready var camera := $Neck/Camera3D
 @onready var root := $".."
+@onready var footsteps := $Steps1
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -36,6 +37,15 @@ func _physics_process(delta: float) -> void:
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir := Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
 	var direction = (neck.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	var horizontal_velocity = Vector3(velocity.x, 0, velocity.z).length()
+	
+	if is_on_floor() && horizontal_velocity > 0:
+		if not footsteps.playing:
+			footsteps.pitch_scale = randf_range(0.9, 1.1)
+			footsteps.play()
+	else:
+		footsteps.stop()
+
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
