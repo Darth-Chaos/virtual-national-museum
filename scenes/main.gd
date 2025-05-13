@@ -5,7 +5,6 @@ extends Node
 
 var paused = false
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -27,10 +26,8 @@ func pauseMenu():
 		
 	paused = !paused
 
-
 func _on_button_pressed() -> void:
 	pass # Replace with function body.
-
 
 func _on_quit_pressed():
 	get_tree().quit()
