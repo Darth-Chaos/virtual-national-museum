@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfj2vbqy1xwbd"]
+
+[sub_resource type="SystemFont" id="SystemFont_1tfs4"]
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_oxtwd"]
+
+[node name="cuadro_panel" type="CanvasLayer"]
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(400, 200)
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = SubResource("SystemFont_1tfs4")
+text = "Este es el cuadro de la Mona Lisa, 
+pintado por Da Vinci en 1503."
+label_settings = SubResource("LabelSettings_oxtwd")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 155.0
+offset_right = 224.0
+offset_bottom = 186.0
+text = "Cerrar"

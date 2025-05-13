@@ -29,6 +29,10 @@ enabled=PackedStringArray("res://addons/accesibilitytools/plugin.cfg", "res://ad
 
 import/blender/enabled=false
 
+[global_group]
+
+Player=""
+
 [input]
 
 move_forward={
