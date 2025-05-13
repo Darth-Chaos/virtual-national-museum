@@ -25,13 +25,13 @@
 [ext_resource type="Material" uid="uid://dyuaw57o8y3i" path="res://addons/godot-xr-tools/materials/highlight.tres" id="19_vwf6o"]
 [ext_resource type="Material" uid="uid://datvvi6j3c0kp" path="res://assets/textures/white.tres" id="21_iwi7x"]
 [ext_resource type="Material" uid="uid://du6jmkigkjxg4" path="res://assets/textures/marble.tres" id="22_3jc85"]
-[ext_resource type="PackedScene" uid="uid://bvqonbkurptcl" path="res://scenes/canvas_layer.tscn" id="23_wjff0"]
+[ext_resource type="PackedScene" uid="uid://d1k6c6eig8rby" path="res://scenes/canvas_layer.tscn" id="23_wjff0"]
 [ext_resource type="Theme" uid="uid://dgt5fjkytx07d" path="res://assets/resources/menu_theme.tres" id="24_h1rib"]
 [ext_resource type="Script" uid="uid://oiduopr3vr0i" path="res://scenes/pasillo_1_paso.gd" id="24_iwv4c"]
 [ext_resource type="Script" uid="uid://hdmc6kagbnrk" path="res://scenes/canvas_layer.gd" id="24_kn4i6"]
 [ext_resource type="PackedScene" uid="uid://bc17jjm28vkbj" path="res://assets/mesh/waterfall_scene.tscn" id="28_jhtcy"]
 [ext_resource type="Script" uid="uid://bhoev1gv61ea6" path="res://scenes/pasillo_2_paso.gd" id="31_wpcbs"]
-[ext_resource type="PackedScene" uid="uid://b4rdbp0qlgd8s" path="res://scenes/Room_2.tscn" id="32_ierb3"]
+[ext_resource type="PackedScene" path="res://scenes/Room_2.tscn" id="32_ierb3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_o1atq"]
 size = Vector3(15, 1, 30)
