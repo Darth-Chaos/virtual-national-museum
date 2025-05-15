@@ -387,21 +387,3 @@ shape = SubResource("BoxShape3D_4cdag")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Techo"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.721, 0)
 mesh = SubResource("BoxMesh_sdlci")
-
-[node name="DirectionalLight3D4" type="DirectionalLight3D" parent="Techo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.64289, 2.30927, 4.9522)
-
-[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="Techo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.95971, 2.324, 4.97971)
-
-[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="Techo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73563, 2.30519, -4.93715)
-
-[node name="DirectionalLight3D6" type="DirectionalLight3D" parent="Techo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.83079, 1.30169, -4.68447)
-
-[node name="DirectionalLight3D7" type="DirectionalLight3D" parent="Techo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.8061, 2.5655, -4.74318)
-
-[node name="DirectionalLight3D8" type="DirectionalLight3D" parent="Techo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.8798, 1.28303, 5.21365)
