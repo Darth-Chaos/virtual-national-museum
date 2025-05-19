@@ -1024,6 +1024,7 @@ mesh = ExtResource("16_wjff0")
 environment = SubResource("Environment_wjff0")
 
 [node name="PauseMenu" parent="." instance=ExtResource("23_wjff0")]
+visible = false
 script = ExtResource("24_kn4i6")
 
 [node name="PanelContainer" type="PanelContainer" parent="PauseMenu"]
@@ -1056,33 +1057,161 @@ offset_bottom = 45.0
 theme = SubResource("Theme_kn4i6")
 text = "Continuar"
 
-[node name="Sound" type="Control" parent="PauseMenu/MarginContainer/VBoxContainer"]
+[node name="option" type="Control" parent="PauseMenu/MarginContainer/VBoxContainer"]
 layout_mode = 2
 tooltip_text = "gfggdfgdfgdfgdgdfgd"
 mouse_filter = 1
 theme = ExtResource("24_h1rib")
 
-[node name="VolumeSlider" type="HSlider" parent="PauseMenu/MarginContainer/VBoxContainer/Sound"]
+[node name="Button" type="Button" parent="PauseMenu/MarginContainer/VBoxContainer/option"]
+layout_mode = 1
+offset_right = 800.0
+offset_bottom = 45.0
+theme = SubResource("Theme_kn4i6")
+text = "Opciones"
+
+[node name="Quit" type="Control" parent="PauseMenu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "gfggdfgdfgdfgdgdfgd"
+mouse_filter = 1
+theme = ExtResource("24_h1rib")
+
+[node name="Button" type="Button" parent="PauseMenu/MarginContainer/VBoxContainer/Quit"]
+layout_mode = 1
+offset_right = 800.0
+offset_bottom = 45.0
+theme = SubResource("Theme_kn4i6")
+text = "Quitar"
+
+[node name="MenuPrincipal" parent="." instance=ExtResource("23_wjff0")]
+script = ExtResource("24_kn4i6")
+
+[node name="PanelContainer" type="PanelContainer" parent="MenuPrincipal"]
+offset_right = 1200.0
+offset_bottom = 680.0
+
+[node name="MarginContainer" type="MarginContainer" parent="MenuPrincipal"]
+offset_left = 6.0
+offset_right = 1206.0
+offset_bottom = 680.0
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MenuPrincipal/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 60
+alignment = 1
+
+[node name="Titulo" type="Control" parent="MenuPrincipal/MarginContainer/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "gfggdfgdfgdfgdgdfgd"
+mouse_filter = 1
+theme = ExtResource("24_h1rib")
+
+[node name="Button" type="Button" parent="MenuPrincipal/MarginContainer/VBoxContainer/Titulo"]
+layout_mode = 1
+offset_left = 191.0
+offset_top = -145.0
+offset_right = 543.0
+offset_bottom = -100.0
+theme = SubResource("Theme_kn4i6")
+text = "Museo Virtual"
+
+[node name="iniciar" type="Control" parent="MenuPrincipal/MarginContainer/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "gfggdfgdfgdfgdgdfgd"
+mouse_filter = 1
+theme = ExtResource("24_h1rib")
+
+[node name="Button" type="Button" parent="MenuPrincipal/MarginContainer/VBoxContainer/iniciar"]
+layout_mode = 1
+offset_left = 4.0
+offset_top = 81.0
+offset_right = 804.0
+offset_bottom = 126.0
+theme = SubResource("Theme_kn4i6")
+text = "Iniciar"
+
+[node name="Opciones" type="Control" parent="MenuPrincipal/MarginContainer/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "gfggdfgdfgdfgdgdfgd"
+mouse_filter = 1
+theme = ExtResource("24_h1rib")
+
+[node name="Button" type="Button" parent="MenuPrincipal/MarginContainer/VBoxContainer/Opciones"]
+layout_mode = 1
+offset_left = 4.0
+offset_top = 81.0
+offset_right = 804.0
+offset_bottom = 126.0
+theme = SubResource("Theme_kn4i6")
+text = "Opciones"
+
+[node name="Quit" type="Control" parent="MenuPrincipal/MarginContainer/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "gfggdfgdfgdfgdgdfgd"
+mouse_filter = 1
+theme = ExtResource("24_h1rib")
+
+[node name="Button" type="Button" parent="MenuPrincipal/MarginContainer/VBoxContainer/Quit"]
+layout_mode = 1
+offset_left = 4.0
+offset_top = 81.0
+offset_right = 804.0
+offset_bottom = 126.0
+theme = SubResource("Theme_kn4i6")
+text = "Quitar"
+
+[node name="Accesibilidad" parent="." instance=ExtResource("23_wjff0")]
+visible = false
+script = ExtResource("24_kn4i6")
+
+[node name="PanelContainer" type="PanelContainer" parent="Accesibilidad"]
+offset_right = 1200.0
+offset_bottom = 680.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Accesibilidad"]
+offset_right = 1200.0
+offset_bottom = 680.0
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Accesibilidad/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 60
+alignment = 1
+
+[node name="brightness" type="Control" parent="Accesibilidad/MarginContainer/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "gfggdfgdfgdfgdgdfgd"
+mouse_filter = 1
+theme = ExtResource("24_h1rib")
+
+[node name="BrilloSlider" type="HSlider" parent="Accesibilidad/MarginContainer/VBoxContainer/brightness"]
 layout_mode = 0
 offset_left = 150.0
 offset_top = 16.0
 offset_right = 797.0
 offset_bottom = 32.0
 
-[node name="TextEdit" type="TextEdit" parent="PauseMenu/MarginContainer/VBoxContainer/Sound"]
+[node name="TextEdit" type="TextEdit" parent="Accesibilidad/MarginContainer/VBoxContainer/brightness"]
 layout_mode = 0
 offset_top = 2.0
 offset_right = 130.0
 offset_bottom = 44.0
-text = "Sonido"
+text = "Brillo"
 
-[node name="Accessibility" type="Control" parent="PauseMenu/MarginContainer/VBoxContainer"]
+[node name="Accessibility" type="Control" parent="Accesibilidad/MarginContainer/VBoxContainer"]
 layout_mode = 2
 tooltip_text = "gfggdfgdfgdfgdgdfgd"
 mouse_filter = 1
 theme = ExtResource("24_h1rib")
 
-[node name="OptionButton" type="OptionButton" parent="PauseMenu/MarginContainer/VBoxContainer/Accessibility"]
+[node name="OptionButton" type="OptionButton" parent="Accesibilidad/MarginContainer/VBoxContainer/Accessibility"]
 layout_mode = 0
 offset_right = 800.0
 offset_bottom = 45.0
@@ -1097,13 +1226,156 @@ popup/item_2/id = 2
 popup/item_3/text = "Tritanopía"
 popup/item_3/id = 3
 
-[node name="Quit" type="Control" parent="PauseMenu/MarginContainer/VBoxContainer"]
+[node name="Continue" type="Control" parent="Accesibilidad/MarginContainer/VBoxContainer"]
 layout_mode = 2
 tooltip_text = "gfggdfgdfgdfgdgdfgd"
 mouse_filter = 1
 theme = ExtResource("24_h1rib")
 
-[node name="Button" type="Button" parent="PauseMenu/MarginContainer/VBoxContainer/Quit"]
+[node name="Button" type="Button" parent="Accesibilidad/MarginContainer/VBoxContainer/Continue"]
+layout_mode = 1
+offset_right = 800.0
+offset_bottom = 45.0
+theme = SubResource("Theme_kn4i6")
+text = "Regresar"
+
+[node name="Quit" type="Control" parent="Accesibilidad/MarginContainer/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "gfggdfgdfgdfgdgdfgd"
+mouse_filter = 1
+theme = ExtResource("24_h1rib")
+
+[node name="Button" type="Button" parent="Accesibilidad/MarginContainer/VBoxContainer/Quit"]
+layout_mode = 1
+offset_right = 800.0
+offset_bottom = 45.0
+theme = SubResource("Theme_kn4i6")
+text = "Quitar"
+
+[node name="option" parent="." instance=ExtResource("23_wjff0")]
+visible = false
+script = ExtResource("24_kn4i6")
+
+[node name="PanelContainer" type="PanelContainer" parent="option"]
+offset_right = 1200.0
+offset_bottom = 680.0
+
+[node name="MarginContainer" type="MarginContainer" parent="option"]
+offset_right = 1200.0
+offset_bottom = 680.0
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="option/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 60
+alignment = 1
+
+[node name="MasterVol" type="Control" parent="option/MarginContainer/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "gfggdfgdfgdfgdgdfgd"
+mouse_filter = 1
+theme = ExtResource("24_h1rib")
+
+[node name="SliderMasterVol" type="HSlider" parent="option/MarginContainer/VBoxContainer/MasterVol"]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 16.0
+offset_right = 797.0
+offset_bottom = 32.0
+min_value = -50.0
+max_value = 0.0
+value = -15.0
+
+[node name="TextEdit" type="TextEdit" parent="option/MarginContainer/VBoxContainer/MasterVol"]
+layout_mode = 0
+offset_top = 2.0
+offset_right = 130.0
+offset_bottom = 44.0
+text = "Sonido"
+
+[node name="MusicVol" type="Control" parent="option/MarginContainer/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "gfggdfgdfgdfgdgdfgd"
+mouse_filter = 1
+theme = ExtResource("24_h1rib")
+
+[node name="MusicVol" type="HSlider" parent="option/MarginContainer/VBoxContainer/MusicVol"]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 16.0
+offset_right = 797.0
+offset_bottom = 32.0
+min_value = -50.0
+max_value = 0.0
+value = -15.0
+
+[node name="TextEdit" type="TextEdit" parent="option/MarginContainer/VBoxContainer/MusicVol"]
+layout_mode = 0
+offset_top = 2.0
+offset_right = 130.0
+offset_bottom = 44.0
+text = "Sonido"
+
+[node name="SFXVol" type="Control" parent="option/MarginContainer/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "gfggdfgdfgdfgdgdfgd"
+mouse_filter = 1
+theme = ExtResource("24_h1rib")
+
+[node name="SliderSFXVol" type="HSlider" parent="option/MarginContainer/VBoxContainer/SFXVol"]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 16.0
+offset_right = 797.0
+offset_bottom = 32.0
+min_value = -50.0
+max_value = 0.0
+value = -15.0
+
+[node name="TextEdit" type="TextEdit" parent="option/MarginContainer/VBoxContainer/SFXVol"]
+layout_mode = 0
+offset_top = 2.0
+offset_right = 130.0
+offset_bottom = 44.0
+text = "Sonido"
+
+[node name="Continue" type="Control" parent="option/MarginContainer/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "gfggdfgdfgdfgdgdfgd"
+mouse_filter = 1
+theme = ExtResource("24_h1rib")
+
+[node name="Button" type="Button" parent="option/MarginContainer/VBoxContainer/Continue"]
+layout_mode = 1
+offset_right = 800.0
+offset_bottom = 45.0
+theme = SubResource("Theme_kn4i6")
+text = "Regresar
+"
+
+[node name="Accesibilidad" type="Control" parent="option/MarginContainer/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "gfggdfgdfgdfgdgdfgd"
+mouse_filter = 1
+theme = ExtResource("24_h1rib")
+
+[node name="Button" type="Button" parent="option/MarginContainer/VBoxContainer/Accesibilidad"]
+layout_mode = 1
+offset_right = 800.0
+offset_bottom = 45.0
+theme = SubResource("Theme_kn4i6")
+text = "Accesibilidad"
+
+[node name="Quit" type="Control" parent="option/MarginContainer/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "gfggdfgdfgdfgdgdfgd"
+mouse_filter = 1
+theme = ExtResource("24_h1rib")
+
+[node name="Button" type="Button" parent="option/MarginContainer/VBoxContainer/Quit"]
 layout_mode = 1
 offset_right = 800.0
 offset_bottom = 45.0
@@ -1180,8 +1452,21 @@ mesh = SubResource("BoxMesh_50md7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.2842, -0.531361, -16.3671)
 
 [connection signal="pressed" from="PauseMenu/MarginContainer/VBoxContainer/Continue/Button" to="PauseMenu" method="_on_continue_pressed"]
-[connection signal="value_changed" from="PauseMenu/MarginContainer/VBoxContainer/Sound/VolumeSlider" to="PauseMenu" method="_on_volume_slider_value_changed"]
-[connection signal="item_selected" from="PauseMenu/MarginContainer/VBoxContainer/Accessibility/OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="PauseMenu/MarginContainer/VBoxContainer/option/Button" to="PauseMenu" method="_on_continue_pressed"]
 [connection signal="pressed" from="PauseMenu/MarginContainer/VBoxContainer/Quit/Button" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="MenuPrincipal/MarginContainer/VBoxContainer/Titulo/Button" to="MenuPrincipal" method="_on_continue_pressed"]
+[connection signal="pressed" from="MenuPrincipal/MarginContainer/VBoxContainer/iniciar/Button" to="MenuPrincipal" method="_on_continue_pressed"]
+[connection signal="pressed" from="MenuPrincipal/MarginContainer/VBoxContainer/Opciones/Button" to="MenuPrincipal" method="_on_continue_pressed"]
+[connection signal="pressed" from="MenuPrincipal/MarginContainer/VBoxContainer/Quit/Button" to="." method="_on_quit_pressed"]
+[connection signal="value_changed" from="Accesibilidad/MarginContainer/VBoxContainer/brightness/BrilloSlider" to="Accesibilidad" method="_on_volume_slider_value_changed"]
+[connection signal="item_selected" from="Accesibilidad/MarginContainer/VBoxContainer/Accessibility/OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="Accesibilidad/MarginContainer/VBoxContainer/Continue/Button" to="Accesibilidad" method="_on_continue_pressed"]
+[connection signal="pressed" from="Accesibilidad/MarginContainer/VBoxContainer/Quit/Button" to="." method="_on_quit_pressed"]
+[connection signal="value_changed" from="option/MarginContainer/VBoxContainer/MasterVol/SliderMasterVol" to="option" method="_on_volume_slider_value_changed"]
+[connection signal="value_changed" from="option/MarginContainer/VBoxContainer/MusicVol/MusicVol" to="option" method="_on_volume_slider_value_changed"]
+[connection signal="value_changed" from="option/MarginContainer/VBoxContainer/SFXVol/SliderSFXVol" to="option" method="_on_volume_slider_value_changed"]
+[connection signal="pressed" from="option/MarginContainer/VBoxContainer/Continue/Button" to="option" method="_on_continue_pressed"]
+[connection signal="pressed" from="option/MarginContainer/VBoxContainer/Accesibilidad/Button" to="option" method="_on_continue_pressed"]
+[connection signal="pressed" from="option/MarginContainer/VBoxContainer/Quit/Button" to="." method="_on_quit_pressed"]
 [connection signal="body_entered" from="Pasillo1_paso" to="Pasillo1_paso" method="_on_body_entered"]
 [connection signal="body_entered" from="Pasillo2_paso" to="Pasillo2_paso" method="_on_body_entered"]
