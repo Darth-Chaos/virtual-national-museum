@@ -80,7 +80,3 @@ func _on_colorblind_pressed():
 	pass
 	
 # Esto debe estar en el script donde conectaste el botón "option"
-
-
-func _on_brillo_slider_value_changed(value: float) -> void:
-	pass # Replace with function body.

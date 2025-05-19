@@ -1,8 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://bs2veq45ho714"]
+[gd_scene load_steps=4 format=3 uid="uid://bs2veq45ho714"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_u8vuu"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3vyb7"]
+
+[sub_resource type="Environment" id="Environment_u8vuu"]
 
 [node name="Player" type="CharacterBody3D" groups=["Player"]]
 
@@ -16,3 +18,4 @@ shape = SubResource("CapsuleShape3D_3vyb7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.456586, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Neck"]
+environment = SubResource("Environment_u8vuu")
