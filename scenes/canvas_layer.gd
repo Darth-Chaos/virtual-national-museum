@@ -1,7 +1,14 @@
 extends CanvasLayer
 
+#audio option
+@onready var BrilloSlider =  $"../Accesibilidad/MarginContainer/VBoxContainer/brightness/BrilloSlider"
 
-@onready var volume_slider = $MarginContainer/VBoxContainer/Sound/VolumeSlider
+#accesibilidad 
+@onready var SliderMasterVol =  $"../option/MarginContainer/VBoxContainer/MasterVol/SliderMasterVol"
+@onready var SliderMusicVol = $"../option/MarginContainer/VBoxContainer/MusicVol/SliderMusicVol"
+@onready var SFXVol = $"../option/MarginContainer/VBoxContainer/SFXVol/SliderSFXVol"
+
+#@onready var volume_slider = $MarginContainer/VBoxContainer/Sound/VolumeSlider
 #@onready var color_filter = $ColorRect
 @onready var root := $".."
 
@@ -33,13 +40,13 @@ var color_matrices := [
 ]
 
 
-func _ready():
-	hide()
+#func _ready():
+	#hide()
 	#volume_slider.visible = false
 	# Configura el slider para controlar el volumen principal
-	volume_slider.value = db_to_linear(
-		AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Master"))
-	)
+	#volume_slider.value = db_to_linear(
+		#AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Master"))
+	#)
 
 	#if color_filter.material == null:
 	#	color_filter.material = ShaderMaterial.new()
@@ -57,17 +64,23 @@ func _on_continue_pressed():
 	root.pauseMenu()
 
 
-func _on_option_button_item_selected(index):
-	pass
+#func _on_option_button_item_selected(index):
+#	pass
 	#if index >= 0 and index < color_matrices.size():
 	#	color_filter.material.set_shader_parameter("color_matrix", color_matrices[index])
 
 
-func _on_volume_slider_value_changed(value):
+#func _on_volume_slider_value_changed(value):
 	# Ajusta el volumen del bus "Master"
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), linear_to_db(value))
+	#AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), linear_to_db(value))
 
 
 func _on_colorblind_pressed():
 	# Aquí implementarías el cambio de filtro (ver siguiente sección)
 	pass
+	
+# Esto debe estar en el script donde conectaste el botón "option"
+
+
+func _on_brillo_slider_value_changed(value: float) -> void:
+	pass # Replace with function body.

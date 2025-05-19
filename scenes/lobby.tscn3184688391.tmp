@@ -1206,16 +1206,6 @@ max_value = 2.0
 step = 0.1
 value = 1.0
 
-[node name="BrilloSlider2" type="HSlider" parent="Accesibilidad/MarginContainer/VBoxContainer/brightness"]
-layout_mode = 0
-offset_left = 150.0
-offset_top = 16.0
-offset_right = 797.0
-offset_bottom = 32.0
-max_value = 2.0
-step = 0.1
-value = 1.0
-
 [node name="TextEdit" type="TextEdit" parent="Accesibilidad/MarginContainer/VBoxContainer/brightness"]
 layout_mode = 0
 offset_top = 2.0
@@ -1476,7 +1466,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.2842, -0.531361, -16.3671
 [connection signal="pressed" from="MenuPrincipal/MarginContainer/VBoxContainer/Opciones/Button" to="." method="_on_option_button_pressed"]
 [connection signal="pressed" from="MenuPrincipal/MarginContainer/VBoxContainer/Quit/Button" to="." method="_on_quit_pressed"]
 [connection signal="value_changed" from="Accesibilidad/MarginContainer/VBoxContainer/brightness/BrilloSlider" to="Accesibilidad" method="_on_brillo_slider_value_changed"]
-[connection signal="value_changed" from="Accesibilidad/MarginContainer/VBoxContainer/brightness/BrilloSlider2" to="Accesibilidad" method="_on_brillo_slider_value_changed"]
 [connection signal="item_selected" from="Accesibilidad/MarginContainer/VBoxContainer/Accessibility/OptionButton" to="." method="_on_option_button_pressed"]
 [connection signal="pressed" from="Accesibilidad/MarginContainer/VBoxContainer/Continue/Button" to="." method="_on_button_regresar_menu_pressed"]
 [connection signal="pressed" from="Accesibilidad/MarginContainer/VBoxContainer/Quit/Button" to="." method="_on_quit_pressed"]
