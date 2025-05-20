@@ -1,0 +1,1362 @@
+[gd_scene load_steps=104 format=3 uid="uid://bfg1fvwk3rm4i"]
+
+[ext_resource type="Texture2D" uid="uid://bg7gdf7b5halo" path="res://materials/madera.jpg" id="1_e3mpl"]
+[ext_resource type="Texture2D" uid="uid://jlpwcspytbbf" path="res://materials/1.jpg" id="2_6fmtf"]
+[ext_resource type="ArrayMesh" uid="uid://c0n826tfeg74v" path="res://assets/3d_tiles/free_wall.obj" id="3_qisgk"]
+[ext_resource type="Texture2D" uid="uid://c7c1ujq1361gx" path="res://assets/textures/Room3/bailarines.jpg" id="4_2ydyt"]
+[ext_resource type="Texture2D" uid="uid://cuka8crf3lm7g" path="res://assets/textures/Room3/niña.jpg" id="4_3ksoa"]
+[ext_resource type="Texture2D" uid="uid://c4bh5vuapoqgf" path="res://assets/textures/Room3/bodega.jpg" id="4_qisgk"]
+[ext_resource type="Texture2D" uid="uid://0i2y0yospb0b" path="res://assets/textures/Room3/Flores_abstracto.jpg" id="5_jaadn"]
+[ext_resource type="Texture2D" uid="uid://bmtt1p8m7uhoe" path="res://assets/textures/Room3/mujer con naipes.jpg" id="6_jaadn"]
+[ext_resource type="Texture2D" uid="uid://cbcbx168m2sj8" path="res://assets/textures/Room3/monalisa.jpg" id="7_pn1l3"]
+[ext_resource type="Texture2D" uid="uid://dsj8fs31jcy8e" path="res://assets/textures/Room3/GUITARRA.JPG" id="8_ocbwd"]
+[ext_resource type="Texture2D" uid="uid://ndnifnr055t0" path="res://assets/textures/Room3/20julio.jpg" id="9_v77as"]
+[ext_resource type="Texture2D" uid="uid://dphlnjflo8q6y" path="res://assets/textures/Room3/pica.jpg" id="10_v77as"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_16fbc"]
+size = Vector3(30, 0.1, 60)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3sxtb"]
+albedo_color = Color(1, 1, 1, 0)
+albedo_texture = ExtResource("1_e3mpl")
+
+[sub_resource type="BoxMesh" id="BoxMesh_7q28s"]
+material = SubResource("StandardMaterial3D_3sxtb")
+size = Vector3(30, 0, 60)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x06y2"]
+size = Vector3(30, 8, 0.1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8xlnp"]
+albedo_texture = ExtResource("2_6fmtf")
+
+[sub_resource type="BoxMesh" id="BoxMesh_5oq03"]
+material = SubResource("StandardMaterial3D_8xlnp")
+size = Vector3(30, 8, 0.1)
+
+[sub_resource type="FontFile" id="FontFile_tfjsc"]
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_60olc"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_o2jr4"]
+material = SubResource("StandardMaterial3D_60olc")
+size = Vector3(2.5, 2.5, 0)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sucen"]
+size = Vector3(3, 3, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_etxps"]
+albedo_color = Color(0.545098, 0.270588, 0.0745098, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4feti"]
+material = SubResource("StandardMaterial3D_etxps")
+size = Vector3(3, 4, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ksoa"]
+albedo_texture = ExtResource("4_2ydyt")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_2ydyt"]
+material = SubResource("StandardMaterial3D_3ksoa")
+size = Vector2(2.5, 3.5)
+orientation = 2
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ihgp6"]
+size = Vector3(3, 3, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2esee"]
+albedo_texture = ExtResource("4_3ksoa")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_03hv4"]
+material = SubResource("StandardMaterial3D_2esee")
+size = Vector2(3, 4)
+orientation = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nsaj0"]
+albedo_color = Color(0.545098, 0.270588, 0.0745098, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_f22et"]
+material = SubResource("StandardMaterial3D_nsaj0")
+size = Vector3(3.5, 4.5, 0)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_koxdm"]
+size = Vector3(3, 3, 0)
+
+[sub_resource type="FontFile" id="FontFile_obk6c"]
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="FontFile" id="FontFile_sghkv"]
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="FontFile" id="FontFile_pn1l3"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="FontFile" id="FontFile_geigx"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8xlnp"]
+size = Vector3(30, 8, 0.1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_16fbc"]
+albedo_texture = ExtResource("2_6fmtf")
+
+[sub_resource type="BoxMesh" id="BoxMesh_16fbc"]
+material = SubResource("StandardMaterial3D_16fbc")
+size = Vector3(30, 8, 0.1)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_sdlci"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ro5ex"]
+size = Vector3(3, 3, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sdlci"]
+albedo_color = Color(0.545098, 0.270588, 0.0745098, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ro5ex"]
+material = SubResource("StandardMaterial3D_sdlci")
+size = Vector3(3, 3, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ocbwd"]
+albedo_texture = ExtResource("4_qisgk")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_v77as"]
+material = SubResource("StandardMaterial3D_ocbwd")
+size = Vector2(2.5, 2.5)
+orientation = 0
+
+[sub_resource type="FontFile" id="FontFile_3ksoa"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3vlto"]
+albedo_color = Color(0.545098, 0.270588, 0.0745098, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sucen"]
+material = SubResource("StandardMaterial3D_3vlto")
+size = Vector3(3, 3, 0)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_etxps"]
+size = Vector3(3, 3, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ydyt"]
+albedo_texture = ExtResource("5_jaadn")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_2esee"]
+material = SubResource("StandardMaterial3D_2ydyt")
+size = Vector2(2.5, 2.5)
+orientation = 0
+
+[sub_resource type="FontFile" id="FontFile_jaadn"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="FontFile" id="FontFile_03hv4"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="FontFile" id="FontFile_qisgk"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3vlto"]
+size = Vector3(3, 3, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sucen"]
+albedo_color = Color(0.545098, 0.270588, 0.0745098, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ihgp6"]
+material = SubResource("StandardMaterial3D_sucen")
+size = Vector3(3, 3, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pn1l3"]
+albedo_texture = ExtResource("6_jaadn")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_geigx"]
+material = SubResource("StandardMaterial3D_pn1l3")
+size = Vector2(2.5, 2.5)
+orientation = 2
+
+[sub_resource type="FontFile" id="FontFile_2ydyt"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="FontFile" id="FontFile_ocbwd"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="FontFile" id="FontFile_v77as"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3sxtb"]
+size = Vector3(60, 8, 0.1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7q28s"]
+albedo_texture = ExtResource("2_6fmtf")
+
+[sub_resource type="BoxMesh" id="BoxMesh_x06y2"]
+material = SubResource("StandardMaterial3D_7q28s")
+size = Vector3(60, 8, 0.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ah64o"]
+size = Vector3(0, 3, 3)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o2jr4"]
+albedo_color = Color(0.545098, 0.270588, 0.0745098, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_h7wrj"]
+material = SubResource("StandardMaterial3D_o2jr4")
+size = Vector3(0, 4.5, 3)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_geigx"]
+albedo_texture = ExtResource("7_pn1l3")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_jaadn"]
+material = SubResource("StandardMaterial3D_geigx")
+size = Vector2(2.5, 4)
+orientation = 2
+
+[sub_resource type="FontFile" id="FontFile_2esee"]
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="FontFile" id="FontFile_txorj"]
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="FontFile" id="FontFile_b4xni"]
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="FontFile" id="FontFile_og1c5"]
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o2jr4"]
+size = Vector3(0, 3, 3)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h7wrj"]
+albedo_color = Color(0.545098, 0.270588, 0.0745098, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_60olc"]
+material = SubResource("StandardMaterial3D_h7wrj")
+size = Vector3(0, 3, 3)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_op4fx"]
+albedo_texture = ExtResource("8_ocbwd")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_obk6c"]
+material = SubResource("StandardMaterial3D_op4fx")
+size = Vector2(2.5, 2.5)
+orientation = 2
+
+[sub_resource type="FontFile" id="FontFile_tw57g"]
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6fmtf"]
+size = Vector3(3, 3, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qisgk"]
+albedo_color = Color(0.545098, 0.270588, 0.0745098, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jaadn"]
+material = SubResource("StandardMaterial3D_qisgk")
+size = Vector3(4, 4.5, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7wqm2"]
+albedo_texture = ExtResource("9_v77as")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_sghkv"]
+material = SubResource("StandardMaterial3D_7wqm2")
+size = Vector2(3, 4)
+orientation = 2
+
+[sub_resource type="FontFile" id="FontFile_kugo7"]
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="FontFile" id="FontFile_fxy63"]
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/25/0/ascent = 0.0
+cache/0/25/0/descent = 0.0
+cache/0/25/0/underline_position = 0.0
+cache/0/25/0/underline_thickness = 0.0
+cache/0/25/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="FontFile" id="FontFile_op4fx"]
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6fmtf"]
+albedo_color = Color(0.545098, 0.270588, 0.0745098, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_qisgk"]
+material = SubResource("StandardMaterial3D_6fmtf")
+size = Vector3(4.5, 3.5, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_obk6c"]
+albedo_texture = ExtResource("10_v77as")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tw57g"]
+material = SubResource("StandardMaterial3D_obk6c")
+size = Vector2(4, 3)
+orientation = 2
+
+[sub_resource type="FontFile" id="FontFile_7wqm2"]
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qisgk"]
+size = Vector3(3, 3, 0)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5oq03"]
+size = Vector3(15, 8, 0.1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_682yj"]
+albedo_texture = ExtResource("2_6fmtf")
+
+[sub_resource type="BoxMesh" id="BoxMesh_e66l3"]
+material = SubResource("StandardMaterial3D_682yj")
+size = Vector3(16, 8, 0.1)
+
+[sub_resource type="Skin" id="Skin_sucen"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ah64o"]
+size = Vector3(0, 2, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e3mpl"]
+size = Vector3(25, 8, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6fmtf"]
+size = Vector3(28, 8, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4cdag"]
+size = Vector3(30, 0.1, 20)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sdlci"]
+size = Vector3(30, 0, 60)
+
+[node name="Room3" type="Node3D"]
+
+[node name="Piso" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.06358, 0, 0.31481)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piso"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.316895)
+shape = SubResource("BoxShape3D_16fbc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Piso"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.316895)
+mesh = SubResource("BoxMesh_7q28s")
+skeleton = NodePath("../CollisionShape3D")
+
+[node name="ParedDerecha" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.019, -1.00303, -33.573)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedDerecha"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.64653, 3.62327)
+shape = SubResource("BoxShape3D_x06y2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ParedDerecha"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.87937, 3.623)
+mesh = SubResource("BoxMesh_5oq03")
+
+[node name="Cuadro" type="StaticBody3D" parent="ParedDerecha"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.84582, -1.1394, -0.388275)
+
+[node name="FreeWall" type="MeshInstance3D" parent="ParedDerecha/Cuadro"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13.9583, 2.4007, 4.42863)
+mesh = ExtResource("3_qisgk")
+skeleton = NodePath("../..")
+
+[node name="Label3D" type="Label3D" parent="ParedDerecha/Cuadro/FreeWall"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.271477, 3.19496, -1.69463)
+text = "Nombre de la obra: Bailarinas en la barra (Dancers at the Bar)
+Descripción general: La pintura representa a una bailarina de 
+ballet realizando un estiramiento en la barra. Como es 
+característico del estilo de Botero, la figura de la bailarina se 
+presenta con volúmenes exagerados, lo que le confiere una 
+presencia monumental y una sensación de suavidad.
+ Viste un tutú blanco, zapatillas de ballet rosas y tiene un 
+adorno floral rojo en el cabello. Su reflejo en el espejo detrás
+ de ella muestra la misma pose, ofreciendo una doble
+ perspectiva de la figura. El ambiente es sencillo, con una 
+pared verde clara y una cortina roja parcialmente visible, 
+centrando la atención en la bailarina.
+
+"
+font = SubResource("FontFile_tfjsc")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedDerecha/Cuadro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9092, 5.76549, 4.23572)
+visible = false
+mesh = SubResource("BoxMesh_o2jr4")
+skeleton = NodePath("../MeshInstance3D")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedDerecha/Cuadro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0818, 5.87716, 3.96397)
+shape = SubResource("BoxShape3D_sucen")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ParedDerecha/Cuadro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.81695, 5.69969, 4.15796)
+mesh = SubResource("BoxMesh_4feti")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="ParedDerecha/Cuadro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.82685, 5.72971, 4.21606)
+mesh = SubResource("PlaneMesh_2ydyt")
+
+[node name="Cuadro2" type="StaticBody3D" parent="ParedDerecha"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.81953, -1.28611, -0.156742)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedDerecha/Cuadro2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.20595, 5.80805, 3.79096)
+shape = SubResource("BoxShape3D_ihgp6")
+
+[node name="Cuadro3" type="StaticBody3D" parent="ParedDerecha"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.34788, -0.999592, 0)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedDerecha/Cuadro3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.63052, 5.46496, 3.7761)
+mesh = SubResource("PlaneMesh_03hv4")
+skeleton = NodePath("../MeshInstance3D")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ParedDerecha/Cuadro3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.63052, 5.46496, 3.75509)
+mesh = SubResource("BoxMesh_f22et")
+skeleton = NodePath("../CollisionShape3D")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedDerecha/Cuadro3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.95792, 5.56989, 3.59556)
+shape = SubResource("BoxShape3D_koxdm")
+
+[node name="Label3D" type="Label3D" parent="ParedDerecha/Cuadro3/CollisionShape3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.61422, 0.0454562, 0.314341)
+text = "Niña con helado
+Autor: Fernando Botero
+Técnica: Óleo sobre lienzo
+Ubicación: Museo Botero, Bogotá"
+font = SubResource("FontFile_obk6c")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="FreeWall" type="MeshInstance3D" parent="ParedDerecha/Cuadro3"]
+transform = Transform3D(-0.026334, 0, -0.999653, 0, 1, 0, 0.999653, 0, -0.026334, 4.32572, 2.15835, 4.04151)
+mesh = ExtResource("3_qisgk")
+skeleton = NodePath("")
+
+[node name="Label3D" type="Label3D" parent="ParedDerecha/Cuadro3/FreeWall"]
+transform = Transform3D(-4.28408e-08, 0, 1, 0, 1, 0, -1, 0, -4.28408e-08, 0.704418, 3.232, 1.70628)
+text = "Niña comiendo helado
+
+De qué trata: Esta obra se centra en la figura de una 
+niña en el acto de comer un helado. Es una escena 
+que evoca inocencia, placer y la simple alegría de un
+ momento dulce. Botero representa a la niña con sus 
+característicos volúmenes generosos, lo que le otorga
+ una presencia notable a pesar de la sencillez de la 
+acción.
+ Su expresión suele ser de concentración y disfrute 
+del helado.
+Autor: Fernando Botero Angulo
+Breve descripción con otras obras de Botero:
+ Al igual que en otras de sus representaciones de
+ niños y figuras humanas, la \"Niña comiendo helado\" 
+se distingue por la monumentalidad de la figura
+, lograda a través de la exageración de las proporciones
+. Esta característica, presente en toda su obra, no busca
+ la caricatura, sino una exploración de la forma y el
+ volumen que confiere a sus personajes una cualidad
+ escultórica. "
+font = SubResource("FontFile_sghkv")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="ParedIzquierda" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.132452, 33.6492)
+
+[node name="FreeWall" type="MeshInstance3D" parent="ParedIzquierda"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.367, -0.0931973, -4.667)
+mesh = ExtResource("3_qisgk")
+
+[node name="Label3D" type="Label3D" parent="ParedIzquierda/FreeWall"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.283518, 4.70858, 1.85697)
+text = "Biografía y Trayectoria Artística
+Tashko emigró a Estados Unidos en 1923, donde se graduó 
+en Derecho en la Universidad de Harvard. Posteriormente, 
+estudió Bellas Artes en el Museo de Bellas Artes de Boston y 
+música en el Conservatorio de Boston, compartiendo su pasión 
+por la flauta con su hermana, la reconocida soprano 
+Tefta Tashko-Koço. En Europa, tuvo la oportunidad de exponer 
+junto a figuras como Picasso, Léger, Delaunay y Jean Arp, y más 
+tarde se relacionó con expresionistas abstractos como Pollock, 
+de Kooning y Rothko "
+font = SubResource("FontFile_pn1l3")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="Label3D2" type="Label3D" parent="ParedIzquierda/FreeWall"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.259022, 1.99185, 1.81833)
+text = "OBRA:
+Bodegón es una obra que refleja la exploración de Tashko 
+dentro del cubismo, un movimiento que lo influenció 
+fuertemente tras su paso por Europa y su contacto 
+con artistas como Fernand Léger y Robert Delaunay. 
+El tratamiento de las formas, la geometrización de los 
+objetos y el uso de planos superpuestos sugieren una 
+reinterpretación moderna del género tradicional del 
+bodegón.
+
+Aunque el bodegón en la pintura clásica suele 
+centrarse en la representación realista de objetos 
+cotidianos como frutas, utensilios o botellas, 
+Tashko lo transforma en una composición estructurada,
+ rítmica y abstracta, donde los objetos casi desaparecen 
+como entidades individuales para convertirse en parte
+ de una estructura visual integrada."
+font = SubResource("FontFile_geigx")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedIzquierda"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.09207, 3.72635, -3.85561)
+shape = SubResource("BoxShape3D_8xlnp")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ParedIzquierda"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.092, 3.85, -3.858)
+mesh = SubResource("BoxMesh_16fbc")
+
+[node name="Cuadro" type="StaticBody3D" parent="ParedIzquierda"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.93553, -1.50151, -13.7342)
+physics_material_override = SubResource("PhysicsMaterial_sdlci")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedIzquierda/Cuadro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.76551, 4.9402, 9.8498)
+shape = SubResource("BoxShape3D_ro5ex")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ParedIzquierda/Cuadro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.76996, 5.10937, 9.81349)
+mesh = SubResource("BoxMesh_ro5ex")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedIzquierda/Cuadro/MeshInstance3D"]
+transform = Transform3D(-0.0486056, 0, 0.998818, 0, 1, 0, -0.998818, 0, -0.0486056, -0.0424681, 0.00687337, -0.0847359)
+mesh = SubResource("PlaneMesh_v77as")
+skeleton = NodePath("../../../../ParedDelantera/Cuadro")
+
+[node name="Label3D" type="Label3D" parent="ParedIzquierda/Cuadro/MeshInstance3D/MeshInstance3D2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.071413, -2.04879, 1.46761)
+text = "Obra: Bodegón
+Fecha de creación: 1948
+Técnica: Óleo sobre madera
+Ubicación actual: Museo Nacional de Colombia"
+font = SubResource("FontFile_3ksoa")
+font_size = 26
+horizontal_alignment = 0
+
+[node name="Cuadro2" type="StaticBody3D" parent="ParedIzquierda"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.89713, -1.71842, 0.0321026)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ParedIzquierda/Cuadro2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.47253, -4.0045)
+mesh = SubResource("BoxMesh_sucen")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedIzquierda/Cuadro2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.648, -4)
+shape = SubResource("BoxShape3D_etxps")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedIzquierda/Cuadro2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.0184765, 5.55679, -4.00932)
+mesh = SubResource("PlaneMesh_2esee")
+
+[node name="Label3D" type="Label3D" parent="ParedIzquierda/Cuadro2/MeshInstance3D2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -2.17279, 1.45591)
+text = "Autor: Arthur Tashko
+
+Técnica: Óleo sobre lienzo
+
+Fecha estimada de creación: Décadas de 1960–1970 
+(período colombiano)"
+font = SubResource("FontFile_jaadn")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="FreeWall2" type="MeshInstance3D" parent="ParedIzquierda/Cuadro2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.51891, 1.50738, -4.2151)
+mesh = ExtResource("3_qisgk")
+skeleton = NodePath("../..")
+
+[node name="Label3D" type="Label3D" parent="ParedIzquierda/Cuadro2/FreeWall2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.375757, 4.27311, 1.80261)
+text = "OBRA:
+\"Flores – Abstracto en rojo y negro\" es una pintura que
+ sintetiza las principales influencias de Arthur Tashko en
+ su etapa madura, combinando elementos del cubismo, 
+el constructivismo y el expresionismo abstracto, con una 
+sensibilidad profundamente personal.
+Aunque el título remite a un tema figurativo tradicional
+ –las flores–, Tashko lo aborda desde una abstracción 
+geométrica, alejada de la representación literal. 
+Los elementos florales son sugeridos a través de formas 
+fragmentadas, angulares y composiciones que recuerdan 
+pétalos o tallos, dispuestos en planos superpuestos. 
+Lo floral se convierte así en una excusa formal, un punto 
+de partida para explorar la relación entre color, estructura
+y emoción.
+"
+font = SubResource("FontFile_03hv4")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="Label3D2" type="Label3D" parent="ParedIzquierda/Cuadro2/FreeWall2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.25363, 1.72878, 1.78695)
+text = "BIOGRAFIA
+En 1962, Tashko se trasladó a Colombia, país donde viviría 
+hasta su muerte en 1994. Durante más de tres décadas fue 
+una figura silenciosa pero esencial en el panorama del arte 
+colombiano. Aunque no siempre gozó de una visibilidad 
+institucional amplia, su obra tuvo un gran impacto en 
+círculos académicos, artísticos y familiares.
+
+"
+font = SubResource("FontFile_qisgk")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="Cuadro3" type="StaticBody3D" parent="ParedIzquierda"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.3943, -1.64621, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedIzquierda/Cuadro3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.63476, 5.26409, -3.47224)
+shape = SubResource("BoxShape3D_3vlto")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ParedIzquierda/Cuadro3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.68623, 5.35046, -3.95834)
+mesh = SubResource("BoxMesh_ihgp6")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedIzquierda/Cuadro3"]
+transform = Transform3D(-1, 1.98339e-09, 8.74003e-08, 0, 0.999743, -0.0226873, -8.74228e-08, -0.0226873, -0.999743, -6.67082, 5.40114, -4.0019)
+mesh = SubResource("PlaneMesh_geigx")
+
+[node name="Label3D" type="Label3D" parent="ParedIzquierda/Cuadro3/MeshInstance3D2"]
+transform = Transform3D(1, 0, 8.52651e-14, 0, 1, 0, 0, 0, 1, -0.727921, -1.96599, 0.0319729)
+text = "Título: Mujer con naipes
+
+Autor: Arthur Tashko
+
+Técnica: Óleo sobre lienzo"
+font = SubResource("FontFile_2ydyt")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="FreeWall2" type="MeshInstance3D" parent="ParedIzquierda"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -14.9784, -0.220604, -4.29215)
+mesh = ExtResource("3_qisgk")
+
+[node name="Label3D" type="Label3D" parent="ParedIzquierda/FreeWall2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.347485, 4.19305, 1.86242)
+text = "OBRA Mujer con Naipes
+
+La obra representa a una figura femenina sosteniendo 
+naipes, abordada desde una perspectiva cubista. 
+Tashko descompone y reconfigura la figura en formas 
+geométricas, utilizando una paleta de colores sobrios y 
+contrastantes. El uso de líneas angulares y planos 
+superpuestos crea una composición dinámica que invita
+ al espectador a explorar diferentes perspectivas 
+simultáneamente.
+El tema de los naipes puede interpretarse como una 
+metáfora de la dualidad y el azar en la vida, elementos 
+que Tashko explora mediante la fragmentación y la 
+reorganización de la figura femenina. La obra refleja la 
+influencia de artistas como Fernand Léger y Jean
+ Metzinger, con quienes Tashko tuvo contacto durante 
+su formación en Europa.
+"
+font = SubResource("FontFile_ocbwd")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="Label3D2" type="Label3D" parent="ParedIzquierda/FreeWall2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.262396, 1.72095, 1.90952)
+text = "Autor
+Arthur Tashko fue un artista multidisciplinario que, tras estudiar 
+Derecho en la Universidad de Harvard, se dedicó a las artes 
+plásticas y la música. Su formación en el Museo de Bellas Artes
+ de Boston y su interacción con figuras clave del cubismo y 
+el constructivismo en Europa moldearon su estilo distintivo. 
+En 1962, se trasladó a Colombia, donde vivió hasta su 
+fallecimiento en 1994, contribuyendo significativamente 
+al desarrollo del arte moderno en el país.
+"
+font = SubResource("FontFile_v77as")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="ParedDelantera" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5451, -0.863753, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedDelantera"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -28.0585, 5.0044, -0.0712605)
+shape = SubResource("BoxShape3D_3sxtb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ParedDelantera"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -29.0387, 4.84162, 0)
+mesh = SubResource("BoxMesh_x06y2")
+
+[node name="Cuadro" type="StaticBody3D" parent="ParedDelantera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0931358, 0.439071, 15.4441)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedDelantera/Cuadro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9343, 4.62314, 1.68525)
+shape = SubResource("BoxShape3D_ah64o")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ParedDelantera/Cuadro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9307, 4.27271, 1.63603)
+mesh = SubResource("BoxMesh_h7wrj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedDelantera/Cuadro"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -28.928, 4.26802, 1.61301)
+mesh = SubResource("PlaneMesh_jaadn")
+
+[node name="Label3D" type="Label3D" parent="ParedDelantera/Cuadro/MeshInstance3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.88451, -0.0728097, 0)
+text = "Título: La Mona Lisa a los doce años
+Año: 1978
+Técnica: Óleo sobre lienzo
+Estilo: Boterismo 
+Dimensiones: Aproximadamente 131 x 114 cm
+Ubicación: Museo de Arte Moderno"
+font = SubResource("FontFile_2esee")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="FreeWall" type="MeshInstance3D" parent="ParedDelantera/Cuadro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.846, 0.429915, 6.79)
+mesh = ExtResource("3_qisgk")
+skeleton = NodePath("../../../Piso")
+
+[node name="Label3D" type="Label3D" parent="ParedDelantera/Cuadro/FreeWall"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.405603, 3.32052, 1.55877)
+text = "OBRA:
+\"La Mona Lisa a los doce años\" es una de las 
+reinterpretaciones  más emblemáticas del artista 
+colombiano Fernando Botero, en la que toma como
+ referencia la célebre pintura de Leonardo da Vinci
+ para transformarla con su característico estilo. 
+En lugar de la misteriosa mujer adulta que aparece 
+en el original renacentista, Botero presenta a una 
+niña joven, de rostro redondeado, mirada enigmática
+ y cuerpo robusto, en consonancia con su lenguaje
+ artístico conocido como boterismo, que exagera el
+ volumen y las proporciones. La niña está situada frente
+ a un paisaje difuso que remite al fondo del cuadro de
+ Da Vinci, pero lo hace con un aire lúdico e irreverente. 
+Más que una burla, esta obra es un homenaje cargado
+ de ironía y humor, que reinterpreta los íconos de la 
+historia del arte desde una mirada latinoamericana."
+font = SubResource("FontFile_txorj")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="Cuadro2" type="StaticBody3D" parent="ParedDelantera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10.4907)
+
+[node name="FreeWall2" type="MeshInstance3D" parent="ParedDelantera/Cuadro2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.763, 1, -0.617)
+mesh = ExtResource("3_qisgk")
+skeleton = NodePath("../..")
+
+[node name="Label3D" type="Label3D" parent="ParedDelantera/Cuadro2/FreeWall2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.346531, 5.30793, 1.79122)
+text = "OBRA:
+\"Lección de guitarra\" es una de las primeras obras en las que
+ Fernando Botero empieza a consolidar el estilo que lo haría 
+mundialmente famoso. Pintada en 1960, esta obra muestra 
+una escena íntima y doméstica: un maestro o padre enseña
+ a un niño o joven a tocar la guitarra. Sin embargo, más allá 
+del simple acto de instrucción musical, la escena está cargada
+ de tensión emocional y una cierta solemnidad, casi como si 
+se tratara de un rito de paso. Los personajes aparecen con 
+cuerpos robustos, rostros serenos y formas redondeadas,
+ anticipando el desarrollo del boterismo."
+font = SubResource("FontFile_b4xni")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="Label3D2" type="Label3D" parent="ParedDelantera/Cuadro2/FreeWall2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.28129, 2.36895, 1.75292)
+text = "Sobre el autor: Fernando Botero (1932–2023)
+Fernando Botero fue uno de los artistas más reconocidos de 
+América Latina y una figura clave en el arte contemporáneo 
+mundial. Nacido en Medellín, Colombia, en 1932, desarrolló 
+desde joven una inclinación hacia las artes visuales,
+ estudiando en Bogotá, Madrid, y más tarde en Florencia,
+ donde se empapó del arte clásico europeo. Sin embargo,
+ Botero forjó un estilo inconfundible que rompió con los 
+cánones tradicionales: el boterismo. Esta técnica se
+ caracteriza por la exageración volumétrica de cuerpos
+ humanos, animales y objetos, no como una simpl
+e deformación sino como una manera de resaltar
+ la sensualidad, la presencia y, en muchos casos, la crítica 
+social o política. Sus obras exploran temas cotidianos, 
+religiosos, históricos y hasta de violencia, siempre desde 
+una estética que invita tanto a la contemplación como
+ a la reflexión. "
+font = SubResource("FontFile_og1c5")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedDelantera/Cuadro2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.8611, 4.96171, -6.16995)
+shape = SubResource("BoxShape3D_o2jr4")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ParedDelantera/Cuadro2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.8302, 4.971, -6.12309)
+mesh = SubResource("BoxMesh_60olc")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedDelantera/Cuadro2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -28.7595, 5.01103, -6.17758)
+mesh = SubResource("PlaneMesh_obk6c")
+
+[node name="Label3D" type="Label3D" parent="ParedDelantera/Cuadro2/MeshInstance3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01292, 0, 0)
+text = "Autor: Fernando Botero
+Fecha: 1960
+Estilo: Boterismo (figuras voluminosas 
+y proporciones exageradas)
+Técnica: Óleo sobre tela
+
+Ubicación: Museo Nacional de Colombia, Bogotá "
+font = SubResource("FontFile_tw57g")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="Cuadro3" type="StaticBody3D" parent="ParedDelantera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.40848)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedDelantera/Cuadro3"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -28.9761, 4.99111, -11.4215)
+shape = SubResource("BoxShape3D_6fmtf")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedDelantera/Cuadro3"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -28.9761, 4.51057, -11.4215)
+mesh = SubResource("BoxMesh_jaadn")
+skeleton = NodePath("../CollisionShape3D")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ParedDelantera/Cuadro3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -28.9517, 4.48293, -11.4238)
+mesh = SubResource("PlaneMesh_sghkv")
+
+[node name="Label3D" type="Label3D" parent="ParedDelantera/Cuadro3/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.13572, 0.174245, 0)
+text = "Autor: Fernando Botero
+
+Fecha: 1984
+
+Estilo: Boterismo con crítica social y política
+
+Técnica: Óleo sobre tela
+
+Dimensiones: 214,2 x 167,5 cm
+
+Ubicación: Museo Nacional de Colombia"
+font = SubResource("FontFile_kugo7")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="FreeWall" type="MeshInstance3D" parent="ParedDelantera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.629, 1, -3.55)
+mesh = ExtResource("3_qisgk")
+
+[node name="Label3D" type="Label3D" parent="ParedDelantera/FreeWall"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.35976, 3.37424, 1.59)
+text = "OBRA:
+\"20 de julio\" es una obra poderosa de Fernando Botero, 
+realizada en 1984, que se aparta del tono lúdico de muchas
+ de sus otras composiciones para adentrarse en el terreno
+ de la crítica política y la denuncia social. El título hace
+ referencia a una de las fechas más emblemáticas de
+Colombia: el 20 de julio, día de la independencia nacional. 
+Sin embargo, Botero no representa aquí una escena
+ patriótica ni festiva, sino un momento oscuro y 
+perturbador, probablemente relacionado con la 
+violencia política que ha marcado al país a lo largo 
+del siglo XX. La escena muestra un grupo de figuras 
+voluminosas, típicas del estilo boteriano, en una
+ composición cargada de tensión. Hay elementos que 
+remiten al conflicto armado, a la represión, o incluso a una 
+ejecución extrajudicial, lo cual genera un fuerte contraste
+ entre la estética aparentemente inocente del volumen 
+exagerado y el contenido profundamente trágico."
+font = SubResource("FontFile_fxy63")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="Cuadro4" type="StaticBody3D" parent="ParedDelantera"]
+
+[node name="FreeWall2" type="MeshInstance3D" parent="ParedDelantera/Cuadro4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.7189, 1.17119, -15.0577)
+mesh = ExtResource("3_qisgk")
+skeleton = NodePath("../..")
+
+[node name="Label3D" type="Label3D" parent="ParedDelantera/Cuadro4/FreeWall2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.306829, 3.22188, 1.74913)
+text = "OBRA:
+\"La pica\" es una de las obras más impactantes de Fernando 
+Botero dentro de su serie dedicada a la violencia en Colombia,
+ realizada durante los años 80. En esta pintura, Botero 
+representa de forma cruda y directa una escena de extrema
+ violencia: una cabeza humana clavada en una lanza o pica, 
+aludiendo a los métodos brutales de ejecución y terrorismo 
+que se vivieron durante las décadas más sangrientas del 
+conflicto armado colombiano. Aunque mantiene su
+ característico estilo voluminoso y figuras redondeadas, el 
+contenido de la obra es todo menos amable: contrasta la
+ estética aparentemente inocente y colorida con la brutalidad 
+del acto representado, creando un efecto perturbador 
+en el espectador.
+
+La escena es una clara denuncia contra la deshumanización,
+ la barbarie y el uso del terror como arma política y social.
+ Botero no representa el sufrimiento desde el realismo gráfico, 
+sino desde una estilización que potencia el horror por contraste. 
+Al presentar estos actos en un lenguaje visual “blando”, 
+casi infantil, logra que el mensaje golpee con más fuerza, pues 
+resalta lo absurdo y grotesco de la violencia cuando se normaliza
+ o se vuelve parte del paisaje cotidiano."
+font = SubResource("FontFile_op4fx")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ParedDelantera/Cuadro4"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -28.8533, 4.75398, -20.2509)
+mesh = SubResource("BoxMesh_qisgk")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedDelantera/Cuadro4"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -28.8157, 4.76723, -20.2475)
+mesh = SubResource("PlaneMesh_tw57g")
+
+[node name="Label3D" type="Label3D" parent="ParedDelantera/Cuadro4/MeshInstance3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.72078, -0.0889287, 3.8147e-06)
+text = "Autor: Fernando Botero
+
+Fecha: 1984
+
+Estilo: Boterismo con enfoque en la violencia y denuncia social
+
+Técnica: Óleo sobre tela"
+font = SubResource("FontFile_7wqm2")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedDelantera/Cuadro4"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -28.9661, 4.88089, -20.2594)
+shape = SubResource("BoxShape3D_qisgk")
+
+[node name="ParedTrasera" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1106, -1.01636, -26.1786)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedTrasera"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.638849, 4.87722, -1.45973)
+shape = SubResource("BoxShape3D_5oq03")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="ParedTrasera"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.399511, 4.93115, 17.0395)
+shape = SubResource("BoxShape3D_5oq03")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ParedTrasera"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.222815, 5.22761, -1.90999)
+mesh = SubResource("BoxMesh_e66l3")
+skin = SubResource("Skin_sucen")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedTrasera"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.275803, 5.0414, 17.1552)
+mesh = SubResource("BoxMesh_e66l3")
+skin = SubResource("Skin_sucen")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="ParedTrasera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.299708, 8.09818, 8.21789)
+mesh = SubResource("BoxMesh_ah64o")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="ParedTrasera"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.61322, 4.59702, 44.9112)
+shape = SubResource("BoxShape3D_e3mpl")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="ParedTrasera"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.594488, 4.82866, 42.3202)
+mesh = SubResource("BoxMesh_6fmtf")
+
+[node name="Techo" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.14719, 0)
+
+[node name="SpotLight3D6" type="SpotLight3D" parent="Techo"]
+transform = Transform3D(-0.86625, -0.498188, -0.0376856, -0.0181578, -0.0439867, 0.998867, -0.499281, 0.865953, 0.0290575, -7.68428, 1.6873, -13.7607)
+light_energy = 16.0
+shadow_enabled = true
+shadow_normal_bias = 0.1
+spot_range = 400.0
+spot_angle = 89.0
+spot_angle_attenuation = 0.250001
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="Techo"]
+transform = Transform3D(-0.408843, 0.912444, -0.0171349, 0.00387749, 0.0205124, 0.999782, 0.912597, 0.408687, -0.0119243, -7.6243, 2.28788, 14.6997)
+light_energy = 16.0
+shadow_enabled = true
+shadow_normal_bias = 0.1
+spot_range = 259.785
+spot_angle = 89.0
+spot_angle_attenuation = 0.307787
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="Techo"]
+transform = Transform3D(-0.408843, 0.912444, -0.0171349, 0.00387749, 0.0205124, 0.999782, 0.912597, 0.408687, -0.0119243, 4.26809, 2.0094, 12.8006)
+light_energy = 16.0
+shadow_enabled = true
+shadow_normal_bias = 0.1
+spot_range = 4096.0
+spot_angle = 89.0
+spot_angle_attenuation = 0.129409
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Techo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 3.05, 0)
+shape = SubResource("BoxShape3D_4cdag")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Techo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.721, 0)
+mesh = SubResource("BoxMesh_sdlci")
+
+[node name="SpotLight3D5" type="SpotLight3D" parent="Techo"]
+transform = Transform3D(-0.408843, 0.912444, -0.0171349, 0.00387749, 0.0205124, 0.999782, 0.912597, 0.408687, -0.0119243, 3.45522, 2.40106, -9.68826)
+light_energy = 16.0
+shadow_enabled = true
+shadow_normal_bias = 0.1
+spot_range = 259.785
+spot_angle = 89.0
+spot_angle_attenuation = 1.1487

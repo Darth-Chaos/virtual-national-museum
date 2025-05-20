@@ -1,4 +1,4 @@
-[gd_scene load_steps=130 format=3 uid="uid://c3qbeiucc0nkt"]
+[gd_scene load_steps=126 format=3 uid="uid://c3qbeiucc0nkt"]
 
 [ext_resource type="Script" uid="uid://cfn3sxsy3ia47" path="res://scenes/main.gd" id="1_kn4i6"]
 [ext_resource type="Texture2D" uid="uid://dnrbo3fki1110" path="res://assets/textures/wood_normalmap.png" id="2_q60fs"]
@@ -28,7 +28,6 @@
 [ext_resource type="PackedScene" uid="uid://bvqonbkurptcl" path="res://scenes/canvas_layer.tscn" id="23_wjff0"]
 [ext_resource type="Texture2D" uid="uid://bg7gdf7b5halo" path="res://materials/madera.jpg" id="24_6mek4"]
 [ext_resource type="Theme" uid="uid://dgt5fjkytx07d" path="res://assets/resources/menu_theme.tres" id="24_h1rib"]
-[ext_resource type="Script" uid="uid://oiduopr3vr0i" path="res://scenes/pasillo_1_paso.gd" id="24_iwv4c"]
 [ext_resource type="Script" uid="uid://hdmc6kagbnrk" path="res://scenes/canvas_layer.gd" id="24_kn4i6"]
 [ext_resource type="ArrayMesh" uid="uid://bv4r86wfq0i3o" path="res://assets/models/frame.obj" id="25_8ht5e"]
 [ext_resource type="Texture2D" uid="uid://mvrfb32v62m5" path="res://assets/pictures/Santander.jpg" id="26_tuh25"]
@@ -38,8 +37,9 @@
 [ext_resource type="Texture2D" uid="uid://ce42ihs6fmc1q" path="res://assets/pictures/Beltrán.jpg" id="29_30fw8"]
 [ext_resource type="Texture2D" uid="uid://c111tac0ml8tk" path="res://assets/pictures/batalla_boyaca.jpg" id="30_7rn74"]
 [ext_resource type="AudioStream" uid="uid://jyl8dj7afuue" path="res://assets/sound/Environmental Ambience/water-cascade-65495.mp3" id="30_78rk6"]
-[ext_resource type="Script" uid="uid://bhoev1gv61ea6" path="res://scenes/pasillo_2_paso.gd" id="31_wpcbs"]
 [ext_resource type="PackedScene" uid="uid://b4rdbp0qlgd8s" path="res://scenes/Room_2.tscn" id="32_ierb3"]
+[ext_resource type="PackedScene" uid="uid://bfg1fvwk3rm4i" path="res://scenes/Room_3.tscn" id="39_8tmsf"]
+[ext_resource type="PackedScene" uid="uid://dd1vddelktxe" path="res://scenes/Room_1.tscn" id="40_gxh4y"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_o1atq"]
 size = Vector3(15, 1, 30)
@@ -362,18 +362,6 @@ sky = SubResource("Sky_iwi7x")
 reflected_light_source = 2
 
 [sub_resource type="Theme" id="Theme_kn4i6"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_wpcbs"]
-size = Vector3(3, 0.5, 3)
-
-[sub_resource type="BoxMesh" id="BoxMesh_417c5"]
-size = Vector3(3, 0.2, 3)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_iwv4c"]
-size = Vector3(3, 1, 3)
-
-[sub_resource type="BoxMesh" id="BoxMesh_50md7"]
-size = Vector3(3, 0.2, 3)
 
 [node name="Root" type="Node"]
 script = ExtResource("1_kn4i6")
@@ -756,6 +744,7 @@ shadow_enabled = true
 shadow_normal_bias = 0.1
 spot_range = 15.0
 spot_angle = 89.99
+spot_angle_attenuation = 1.03526
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Lobby/Lamp"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -0.42, 6.792)
@@ -947,6 +936,15 @@ mesh = SubResource("BoxMesh_7rn74")
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.42201, 3.5, 0)
 shape = SubResource("ConcavePolygonShape3D_s3vw1")
 
+[node name="SpotLight3D" type="SpotLight3D" parent="Lobby/Frame"]
+transform = Transform3D(2.7248, 0, 0, 0, 0.00774233, 0.333243, 0, -0.487435, 0.0113247, 6.80781, 4.9462, 0.092841)
+light_energy = 16.0
+shadow_enabled = true
+shadow_normal_bias = 0.1
+spot_range = 19.024
+spot_angle = 37.43
+spot_angle_attenuation = 1.03526
+
 [node name="Frame2" type="StaticBody3D" parent="Lobby"]
 transform = Transform3D(0.569, 0, 0, 0, 2.5, 0, 0, 0, 3.704, 3.186, -5.3, 9.37)
 
@@ -963,6 +961,33 @@ mesh = SubResource("BoxMesh_7rn74")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Lobby/Frame2"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.42201, 3.5, 0)
 shape = SubResource("ConcavePolygonShape3D_s3vw1")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Lobby/Frame2"]
+transform = Transform3D(1.75747, 0, 0, 0, 0.00428804, 0.399977, 0, -0.269963, 0.00289419, 6.57966, 5.37917, 0.0928411)
+light_energy = 16.0
+shadow_enabled = true
+shadow_normal_bias = 0.1
+spot_range = 19.024
+spot_angle = 37.43
+spot_angle_attenuation = 1.03526
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Lobby/Frame2/SpotLight3D"]
+transform = Transform3D(1, 0, 0, 0, 0.999104, 0.0423117, 0, -0.0423117, 0.999104, -14.1187, 0.412372, 0.0249357)
+light_energy = 16.0
+shadow_enabled = true
+shadow_normal_bias = 0.1
+spot_range = 20.0
+spot_angle = 50.29
+spot_angle_attenuation = 1.03526
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Lobby/Frame2"]
+transform = Transform3D(1.75747, 0, 0, 0, -1.18011e-08, 0.4, 0, -0.269978, -7.96513e-09, -17.959, 5.45544, -2.37491)
+light_energy = 16.0
+shadow_enabled = true
+shadow_normal_bias = 0.1
+spot_range = 20.0
+spot_angle = 47.72
+spot_angle_attenuation = 1.03526
 
 [node name="Frame3" type="StaticBody3D" parent="Lobby"]
 transform = Transform3D(-1.01396, 0, -0.0176888, 0, 3, 0, 0.00884875, 0, -2.02692, 0.082, -6.5, 0)
@@ -1149,39 +1174,22 @@ emission_angle_degrees = 0.1
 emission_angle_filter_attenuation_db = 0.0
 parameters/looping = true
 
-[node name="Pasillo1_paso" type="Area3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.75864, -0.438206, -1.60381)
-collision_mask = 2
-script = ExtResource("24_iwv4c")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pasillo1_paso"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.3, 0, -14.5)
-shape = SubResource("BoxShape3D_wpcbs")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Pasillo1_paso"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.323, 0, -14.5)
-mesh = SubResource("BoxMesh_417c5")
-
-[node name="Pasillo2_paso" type="Area3D" parent="." groups=["Player"]]
-collision_mask = 2
-script = ExtResource("31_wpcbs")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pasillo2_paso"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.5, -0.384, -39.58)
-shape = SubResource("BoxShape3D_iwv4c")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Pasillo2_paso"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.5, -0.383879, -39.5852)
-mesh = SubResource("BoxMesh_50md7")
-
 [node name="Room2Container" type="Node3D" parent="."]
 
-[node name="Room1" parent="Room2Container" instance=ExtResource("32_ierb3")]
+[node name="Room2" parent="Room2Container" instance=ExtResource("32_ierb3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.2842, -0.531361, -16.3671)
+
+[node name="Room3Container" type="Node3D" parent="."]
+
+[node name="Room3" parent="Room3Container" instance=ExtResource("39_8tmsf")]
+transform = Transform3D(-0.0152536, 0, -0.999884, 0, 1, 0, 0.999884, 0, -0.0152536, -8.80883, -0.678221, -51.3883)
+
+[node name="Room1Container" type="Node3D" parent="."]
+
+[node name="Room1" parent="Room1Container" instance=ExtResource("40_gxh4y")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 31.6796, -0.553741, -15.9505)
 
 [connection signal="pressed" from="PauseMenu/MarginContainer/VBoxContainer/Continue/Button" to="PauseMenu" method="_on_continue_pressed"]
 [connection signal="value_changed" from="PauseMenu/MarginContainer/VBoxContainer/Sound/VolumeSlider" to="PauseMenu" method="_on_volume_slider_value_changed"]
 [connection signal="item_selected" from="PauseMenu/MarginContainer/VBoxContainer/Accessibility/OptionButton" to="." method="_on_option_button_item_selected"]
 [connection signal="pressed" from="PauseMenu/MarginContainer/VBoxContainer/Quit/Button" to="." method="_on_quit_pressed"]
-[connection signal="body_entered" from="Pasillo1_paso" to="Pasillo1_paso" method="_on_body_entered"]
-[connection signal="body_entered" from="Pasillo2_paso" to="Pasillo2_paso" method="_on_body_entered"]

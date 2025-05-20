@@ -1,19 +1,26 @@
-[gd_scene load_steps=54 format=3 uid="uid://b7bulhemi5iay"]
+[gd_scene load_steps=82 format=3 uid="uid://dd1vddelktxe"]
 
 [ext_resource type="Texture2D" uid="uid://bg7gdf7b5halo" path="res://materials/madera.jpg" id="1_s74jf"]
 [ext_resource type="Texture2D" uid="uid://jlpwcspytbbf" path="res://materials/1.jpg" id="2_sdlci"]
-[ext_resource type="Script" uid="uid://ccbenwg6q3d5a" path="res://scenes/infocuadros/cuadro1.gd" id="3_ro5ex"]
+[ext_resource type="ArrayMesh" uid="uid://c0n826tfeg74v" path="res://assets/3d_tiles/free_wall.obj" id="3_ro5ex"]
+[ext_resource type="Texture2D" uid="uid://b6r3jig43m832" path="res://assets/textures/Room1/autoretrato andres de santa maria.jpg" id="4_3vlto"]
+[ext_resource type="Texture2D" uid="uid://wmw5heqedan7" path="res://assets/textures/Room1/fusileros.jpg" id="5_sucen"]
+[ext_resource type="Texture2D" uid="uid://c2x1jwj236065" path="res://assets/textures/Room1/Lavanderas_Sena.jpg" id="6_etxps"]
+[ext_resource type="Texture2D" uid="uid://74qe5fyorjvs" path="res://assets/textures/Room1/Manzanas.jpg" id="7_4feti"]
+[ext_resource type="Texture2D" uid="uid://l0ndp3cj74yd" path="res://assets/textures/Room1/segadoras.jpg" id="7_6i7m5"]
+[ext_resource type="Texture2D" uid="uid://pejay6y5u3m" path="res://assets/textures/Room1/FondoVerde.jpg" id="7_aok35"]
+[ext_resource type="Texture2D" uid="uid://c8uk6m1bbisma" path="res://assets/textures/Room1/Macuto.jpg" id="7_nsaj0"]
+[ext_resource type="Texture2D" uid="uid://dvb1ld01w1r2" path="res://assets/textures/Room1/SombreroFlores.jpg" id="8_aok35"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_16fbc"]
 size = Vector3(30, 0.1, 20)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3sxtb"]
-albedo_color = Color(1, 1, 1, 0)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6i7m5"]
 albedo_texture = ExtResource("1_s74jf")
 
-[sub_resource type="BoxMesh" id="BoxMesh_7q28s"]
-material = SubResource("StandardMaterial3D_3sxtb")
-size = Vector3(30, 0.5, 20)
+[sub_resource type="PlaneMesh" id="PlaneMesh_nsaj0"]
+material = SubResource("StandardMaterial3D_6i7m5")
+size = Vector2(30, 20)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_x06y2"]
 size = Vector3(30, 8, 0.1)
@@ -25,45 +32,229 @@ albedo_texture = ExtResource("2_sdlci")
 material = SubResource("StandardMaterial3D_8xlnp")
 size = Vector3(30, 8, 0.1)
 
+[sub_resource type="FontFile" id="FontFile_sucen"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/33/0/ascent = 0.0
+cache/0/33/0/descent = 0.0
+cache/0/33/0/underline_position = 0.0
+cache/0/33/0/underline_thickness = 0.0
+cache/0/33/0/scale = 1.0
+cache/0/34/0/ascent = 0.0
+cache/0/34/0/descent = 0.0
+cache/0/34/0/underline_position = 0.0
+cache/0/34/0/underline_thickness = 0.0
+cache/0/34/0/scale = 1.0
+cache/0/35/0/ascent = 0.0
+cache/0/35/0/descent = 0.0
+cache/0/35/0/underline_position = 0.0
+cache/0/35/0/underline_thickness = 0.0
+cache/0/35/0/scale = 1.0
+cache/0/36/0/ascent = 0.0
+cache/0/36/0/descent = 0.0
+cache/0/36/0/underline_position = 0.0
+cache/0/36/0/underline_thickness = 0.0
+cache/0/36/0/scale = 1.0
+cache/0/37/0/ascent = 0.0
+cache/0/37/0/descent = 0.0
+cache/0/37/0/underline_position = 0.0
+cache/0/37/0/underline_thickness = 0.0
+cache/0/37/0/scale = 1.0
+cache/0/38/0/ascent = 0.0
+cache/0/38/0/descent = 0.0
+cache/0/38/0/underline_position = 0.0
+cache/0/38/0/underline_thickness = 0.0
+cache/0/38/0/scale = 1.0
+cache/0/39/0/ascent = 0.0
+cache/0/39/0/descent = 0.0
+cache/0/39/0/underline_position = 0.0
+cache/0/39/0/underline_thickness = 0.0
+cache/0/39/0/scale = 1.0
+cache/0/40/0/ascent = 0.0
+cache/0/40/0/descent = 0.0
+cache/0/40/0/underline_position = 0.0
+cache/0/40/0/underline_thickness = 0.0
+cache/0/40/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/21/0/ascent = 0.0
+cache/0/21/0/descent = 0.0
+cache/0/21/0/underline_position = 0.0
+cache/0/21/0/underline_thickness = 0.0
+cache/0/21/0/scale = 1.0
+cache/0/22/0/ascent = 0.0
+cache/0/22/0/descent = 0.0
+cache/0/22/0/underline_position = 0.0
+cache/0/22/0/underline_thickness = 0.0
+cache/0/22/0/scale = 1.0
+cache/0/23/0/ascent = 0.0
+cache/0/23/0/descent = 0.0
+cache/0/23/0/underline_position = 0.0
+cache/0/23/0/underline_thickness = 0.0
+cache/0/23/0/scale = 1.0
+cache/0/24/0/ascent = 0.0
+cache/0/24/0/descent = 0.0
+cache/0/24/0/underline_position = 0.0
+cache/0/24/0/underline_thickness = 0.0
+cache/0/24/0/scale = 1.0
+cache/0/25/0/ascent = 0.0
+cache/0/25/0/descent = 0.0
+cache/0/25/0/underline_position = 0.0
+cache/0/25/0/underline_thickness = 0.0
+cache/0/25/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="FontFile" id="FontFile_3vlto"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_sucen"]
 size = Vector3(3, 3, 0)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_etxps"]
-albedo_color = Color(0, 0, 0, 1)
+albedo_color = Color(0.545098, 0.270588, 0.0745098, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_4feti"]
 material = SubResource("StandardMaterial3D_etxps")
-size = Vector3(3, 3, 0)
+size = Vector3(3.4, 4.4, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ihgp6"]
+albedo_texture = ExtResource("4_3vlto")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4feti"]
+material = SubResource("StandardMaterial3D_ihgp6")
+size = Vector2(3, 4)
+orientation = 2
+
+[sub_resource type="FontFile" id="FontFile_etxps"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/24/0/ascent = 0.0
+cache/0/24/0/descent = 0.0
+cache/0/24/0/underline_position = 0.0
+cache/0/24/0/underline_thickness = 0.0
+cache/0/24/0/scale = 1.0
+
+[sub_resource type="FontFile" id="FontFile_ihgp6"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/24/0/ascent = 0.0
+cache/0/24/0/descent = 0.0
+cache/0/24/0/underline_position = 0.0
+cache/0/24/0/underline_thickness = 0.0
+cache/0/24/0/scale = 1.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ihgp6"]
 size = Vector3(3, 3, 0)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4feti"]
-albedo_color = Color(0, 0, 0, 1)
+albedo_color = Color(0.545098, 0.270588, 0.0745098, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_aok35"]
 material = SubResource("StandardMaterial3D_4feti")
 size = Vector3(3, 3, 0)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aok35"]
+albedo_texture = ExtResource("5_sucen")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6i7m5"]
+material = SubResource("StandardMaterial3D_aok35")
+size = Vector2(2.5, 2.5)
+orientation = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f22et"]
+albedo_texture = ExtResource("6_etxps")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_koxdm"]
+material = SubResource("StandardMaterial3D_f22et")
+size = Vector2(3, 2)
+orientation = 2
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nsaj0"]
-albedo_color = Color(0, 0, 0, 1)
+albedo_color = Color(0.545098, 0.270588, 0.0745098, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_f22et"]
 material = SubResource("StandardMaterial3D_nsaj0")
-size = Vector3(3, 3, 0)
+size = Vector3(3.5, 2.5, 0)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_koxdm"]
 size = Vector3(3, 3, 0)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ihgp6"]
-albedo_color = Color(0, 0, 0, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_6i7m5"]
-material = SubResource("StandardMaterial3D_ihgp6")
-size = Vector3(3, 3, 0)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_nsaj0"]
-size = Vector3(3, 3, 0)
+[sub_resource type="FontFile" id="FontFile_81te7"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8xlnp"]
 size = Vector3(30, 8, 0.1)
@@ -81,44 +272,142 @@ size = Vector3(30, 8, 0.1)
 size = Vector3(3, 3, 0)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sdlci"]
-albedo_color = Color(0, 0, 0, 1)
+albedo_color = Color(0.545098, 0.270588, 0.0745098, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_ro5ex"]
 material = SubResource("StandardMaterial3D_sdlci")
-size = Vector3(3, 3, 0)
+size = Vector3(3.5, 3.5, 0)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_4feti"]
-size = Vector3(2.62915, 5, 3)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i5l27"]
+albedo_texture = ExtResource("7_nsaj0")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_n6mcp"]
+material = SubResource("StandardMaterial3D_i5l27")
+size = Vector2(3, 3)
+orientation = 2
+
+[sub_resource type="FontFile" id="FontFile_nsaj0"]
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3vlto"]
-albedo_color = Color(0, 0, 0, 1)
+albedo_color = Color(0.545098, 0.270588, 0.0745098, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_sucen"]
 material = SubResource("StandardMaterial3D_3vlto")
-size = Vector3(3, 3, 0)
+size = Vector3(4, 3, 0)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_etxps"]
 size = Vector3(3, 3, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gpd4b"]
+albedo_texture = ExtResource("7_6i7m5")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_i5l27"]
+material = SubResource("StandardMaterial3D_gpd4b")
+size = Vector2(3.5, 2.5)
+orientation = 0
+
+[sub_resource type="FontFile" id="FontFile_n6mcp"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[sub_resource type="FontFile" id="FontFile_cttjf"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3vlto"]
 size = Vector3(3, 3, 0)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sucen"]
-albedo_color = Color(0, 0, 0, 1)
+albedo_color = Color(0.545098, 0.270588, 0.0745098, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_ihgp6"]
 material = SubResource("StandardMaterial3D_sucen")
 size = Vector3(3, 3, 0)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_aok35"]
-size = Vector3(3, 3, 0)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_81te7"]
+albedo_texture = ExtResource("7_aok35")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6i7m5"]
-albedo_color = Color(0, 0, 0, 1)
+[sub_resource type="PlaneMesh" id="PlaneMesh_rl3f8"]
+material = SubResource("StandardMaterial3D_81te7")
+size = Vector2(2.5, 2.5)
+orientation = 2
 
-[sub_resource type="BoxMesh" id="BoxMesh_nsaj0"]
-material = SubResource("StandardMaterial3D_6i7m5")
-size = Vector3(3, 3, 0)
+[sub_resource type="FontFile" id="FontFile_gpd4b"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+
+[sub_resource type="FontFile" id="FontFile_4feti"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3sxtb"]
 size = Vector3(20, 8, 0.1)
@@ -130,42 +419,62 @@ albedo_texture = ExtResource("2_sdlci")
 material = SubResource("StandardMaterial3D_7q28s")
 size = Vector3(20, 8, 0.1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ro5ex"]
-albedo_color = Color(0.870588, 0.721569, 0.529412, 1)
+[sub_resource type="BoxShape3D" id="BoxShape3D_ah64o"]
+size = Vector3(0, 3, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_3vlto"]
-material = SubResource("StandardMaterial3D_ro5ex")
-size = Vector3(0.4, 6, 3)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o2jr4"]
+albedo_color = Color(0.545098, 0.270588, 0.0745098, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_h7wrj"]
+material = SubResource("StandardMaterial3D_o2jr4")
+size = Vector3(0, 3, 4)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_koxdm"]
+albedo_texture = ExtResource("7_4feti")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_81te7"]
+material = SubResource("StandardMaterial3D_koxdm")
+size = Vector2(3.5, 2.5)
+orientation = 2
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o2jr4"]
+size = Vector3(0, 3, 3)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h7wrj"]
+albedo_color = Color(0.545098, 0.270588, 0.0745098, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_60olc"]
+material = SubResource("StandardMaterial3D_h7wrj")
+size = Vector3(0, 3, 3)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rl3f8"]
+albedo_texture = ExtResource("8_aok35")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_gpd4b"]
+material = SubResource("StandardMaterial3D_rl3f8")
+size = Vector2(2.5, 2.5)
+orientation = 2
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5oq03"]
-size = Vector3(20, 8, 0.1)
+size = Vector3(8, 8, 0.1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_682yj"]
 albedo_texture = ExtResource("2_sdlci")
 
 [sub_resource type="BoxMesh" id="BoxMesh_e66l3"]
 material = SubResource("StandardMaterial3D_682yj")
-size = Vector3(20, 8, 0.1)
+size = Vector3(9, 8, 0.1)
 
 [sub_resource type="Skin" id="Skin_sucen"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_etxps"]
-size = Vector3(0.5, 6, 3)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s74jf"]
-albedo_color = Color(0.870588, 0.721569, 0.529412, 1)
+[sub_resource type="BoxMesh" id="BoxMesh_ah64o"]
+size = Vector3(0, 2, 4)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4cdag"]
 size = Vector3(30, 0.1, 20)
 
 [sub_resource type="BoxMesh" id="BoxMesh_sdlci"]
 size = Vector3(30, 0, 20)
-
-[sub_resource type="BoxMesh" id="BoxMesh_s74jf"]
-size = Vector3(3, 0, 3)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_sdlci"]
-size = Vector3(3, 0, 3)
 
 [node name="Room1" type="Node3D"]
 
@@ -178,11 +487,11 @@ shape = SubResource("BoxShape3D_16fbc")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Piso"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.316895)
-mesh = SubResource("BoxMesh_7q28s")
+mesh = SubResource("PlaneMesh_nsaj0")
 skeleton = NodePath("../CollisionShape3D")
 
 [node name="ParedDerecha" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.019, -0.62643, -13.4723)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.019, -0.870656, -13.4723)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ParedDerecha"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.64653, 3.62327)
@@ -193,7 +502,104 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.87937, 3.623)
 mesh = SubResource("BoxMesh_5oq03")
 
 [node name="Cuadro" type="StaticBody3D" parent="ParedDerecha"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.1394, -0.388275)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.84582, -1.1394, -0.388275)
+
+[node name="FreeWall" type="MeshInstance3D" parent="ParedDerecha/Cuadro"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 15.7718, 2.61381, 4.5917)
+mesh = ExtResource("3_ro5ex")
+skeleton = NodePath("../..")
+
+[node name="OBRA" type="Label3D" parent="ParedDerecha/Cuadro/FreeWall"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.254853, 1.98105, -1.75441)
+text = "OBRA:
+Este lienzo nos presenta al propio Andrés de Santa María (1942), 
+mirándonos directamente con una intensidad que invita 
+ la introspección. Es una representación directa de su f<
+igura, probablemente realizada frente a un espejo.
+Podemos observar su rostro, sus facciones, la expresión 
+de sus ojos y la manera en que la luz incide sobre su 
+rostro, modelando sus rasgos. Generalmente, este 
+tipo de obras se centran en capturar no solo la 
+apariencia física del artista, sino también su
+ carácter y su estado de ánimo en el momento
+ de la creación.
+"
+font = SubResource("FontFile_sucen")
+font_size = 26
+horizontal_alignment = 0
+width = 400.0
+
+[node name="Biografia" type="Label3D" parent="ParedDerecha/Cuadro/FreeWall"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.257551, 4.60013, -1.7215)
+text = "BIOGRAFIA
+
+Andrés de Santa María (1860-1945) vivió en Europa, 
+donde su contacto con París lo llevó a conocer 
+de cerca el movimiento impresionista. A su regreso
+ a Colombia, este influyente pintor no solo introdujo
+ las innovadoras técnicas y la estética del 
+impresionismo, sino que también, desde su posición
+ como director de la Escuela Nacional de Bellas Artes, 
+fomentó su adopción y transformó el panorama 
+artístico del país, dejando una huella perdurable.
+"
+font = SubResource("FontFile_3vlto")
+font_size = 26
+horizontal_alignment = 0
+
+[node name="Biografia" type="Label3D" parent="ParedDerecha/Cuadro/FreeWall/Biografia"]
+transform = Transform3D(0.999999, 0, -1.01644e-20, 0, 1, 0, 1.01644e-20, 0, 0.999999, -20.0543, -0.00779438, -0.0398302)
+text = "BIOGRAFIA
+
+Andrés de Santa María (1860-1945) vivió en Europa, 
+donde su contacto con París lo llevó a conocer 
+de cerca el movimiento impresionista. A su regreso
+ a Colombia, este influyente pintor no solo introdujo
+ las innovadoras técnicas y la estética del 
+impresionismo, sino que también, desde su posición
+ como director de la Escuela Nacional de Bellas Artes, 
+fomentó su adopción y transformó el panorama 
+artístico del país, dejando una huella perdurable.
+"
+font = SubResource("FontFile_3vlto")
+font_size = 26
+horizontal_alignment = 0
+
+[node name="Biografia" type="Label3D" parent="ParedDerecha/Cuadro/FreeWall/Biografia/Biografia"]
+transform = Transform3D(-0.99869, 0, 0.0511507, 0, 1, 0, -0.0511507, 0, -0.99869, -0.255763, 0.401258, 18.2235)
+text = "BIOGRAFIA
+
+Andrés de Santa María (1860-1945) vivió en Europa, 
+donde su contacto con París lo llevó a conocer 
+de cerca el movimiento impresionista. A su regreso
+ a Colombia, este influyente pintor no solo introdujo
+ las innovadoras técnicas y la estética del 
+impresionismo, sino que también, desde su posición
+ como director de la Escuela Nacional de Bellas Artes, 
+fomentó su adopción y transformó el panorama 
+artístico del país, dejando una huella perdurable.
+"
+font = SubResource("FontFile_3vlto")
+font_size = 26
+horizontal_alignment = 0
+
+[node name="Biografia" type="Label3D" parent="ParedDerecha/Cuadro/FreeWall/Biografia/Biografia/Biografia"]
+transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -18.1099, -0.303983, 1.27545)
+text = "BIOGRAFIA
+
+Andrés de Santa María (1860-1945) vivió en Europa, 
+donde su contacto con París lo llevó a conocer 
+de cerca el movimiento impresionista. A su regreso
+ a Colombia, este influyente pintor no solo introdujo
+ las innovadoras técnicas y la estética del 
+impresionismo, sino que también, desde su posición
+ como director de la Escuela Nacional de Bellas Artes, 
+fomentó su adopción y transformó el panorama 
+artístico del país, dejando una huella perdurable.
+"
+font = SubResource("FontFile_3vlto")
+font_size = 26
+horizontal_alignment = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ParedDerecha/Cuadro"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0818, 5.87716, 3.96397)
@@ -203,8 +609,58 @@ shape = SubResource("BoxShape3D_sucen")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9132, 5.69969, 4.15796)
 mesh = SubResource("BoxMesh_4feti")
 
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedDerecha/Cuadro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9132, 5.69969, 4.18063)
+mesh = SubResource("PlaneMesh_4feti")
+skeleton = NodePath("../MeshInstance3D")
+
+[node name="Label3D" type="Label3D" parent="ParedDerecha/Cuadro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4807, 3.158, 4.07156)
+text = "Autoretrato. 1942. Óleo sobre lienzo. 0,70 x 0,61. 
+Firmado abajo a la izquierda: 
+A. de Santa María, 1942. Museo Nacional. Bogotá.  "
+font_size = 26
+
 [node name="Cuadro2" type="StaticBody3D" parent="ParedDerecha"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.959342, -1.28611, -0.156742)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.81953, -1.28611, -0.156742)
+
+[node name="FreeWall" type="MeshInstance3D" parent="ParedDerecha/Cuadro2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.38632, 2.76809, 4.19475)
+mesh = ExtResource("3_ro5ex")
+skeleton = NodePath("../../../Piso")
+
+[node name="Obra" type="Label3D" parent="ParedDerecha/Cuadro2/FreeWall"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.395515, 2.12817, -2.01662)
+text = "OBRA;
+\"Los Fusileros\"(1885) es una pintura al óleo sobre lienzo 
+La obra representa una escena bélica, probablemente
+ relacionada con alguna de las numerosas guerras civiles 
+que azotaron a Colombia en el siglo XIX.  Se observa un 
+grupo de soldados o milicianos, armados con fusiles, en una 
+actitud tensa y expectante. La composición sugiere un momento 
+de pausa antes o después del combate. Los personajes están
+ representados con un realismo que busca capturar sus 
+expresiones y la crudeza de la situación. La paleta de colores 
+tiende a ser terrosa y oscura, acorde con la atmósfera sombría 
+y bélica de la escena. La luz juega un papel importante al destacar 
+ciertos rostros y detalles de las armas, creando contrastes dramáticos."
+font = SubResource("FontFile_etxps")
+font_size = 26
+horizontal_alignment = 0
+
+[node name="Biografia" type="Label3D" parent="ParedDerecha/Cuadro2/FreeWall"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.269019, 4.43382, -1.9218)
+text = "BiOGRAFIA:
+Francisco Antonio Cano (1865-1935) fue una figura fundamental 
+en la historia del arte colombiano. Pintor, dibujante, grabador, 
+escritor y educador, Cano es reconocido por su habilidad técnica
+ y por abordar temas tanto costumbristas y retratos como 
+históricos y alegóricos. Su obra se caracteriza por un realismo 
+detallado y una profunda observación de la sociedad colombiana 
+de su tiempo. "
+font = SubResource("FontFile_ihgp6")
+font_size = 26
+horizontal_alignment = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ParedDerecha/Cuadro2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.20595, 5.80805, 3.79096)
@@ -214,11 +670,28 @@ shape = SubResource("BoxShape3D_ihgp6")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.04677, 5.72162, 3.87821)
 mesh = SubResource("BoxMesh_aok35")
 
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ParedDerecha/Cuadro2/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0930486, 0, 0.0954733)
+mesh = SubResource("PlaneMesh_6i7m5")
+
+[node name="Label3D" type="Label3D" parent="ParedDerecha/Cuadro2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.91174, 3.65325, 3.85452)
+text = "Los Fusileros. 1885. 
+Óleo sobre lienzo 1,58 x 1,18. 
+Sin firma.
+ Jockey Club, Bogotá. "
+font_size = 26
+
 [node name="Cuadro3" type="StaticBody3D" parent="ParedDerecha"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00930595, -0.912125, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.76066, -0.999592, 0)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedDerecha/Cuadro3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.1031, 5.46496, 3.7761)
+mesh = SubResource("PlaneMesh_koxdm")
+skeleton = NodePath("../MeshInstance3D")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="ParedDerecha/Cuadro3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.63052, 5.46496, 3.75509)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.14221, 5.46496, 3.75509)
 mesh = SubResource("BoxMesh_f22et")
 skeleton = NodePath("../CollisionShape3D")
 
@@ -226,19 +699,59 @@ skeleton = NodePath("../CollisionShape3D")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.95792, 5.56989, 3.59556)
 shape = SubResource("BoxShape3D_koxdm")
 
-[node name="Cuadro4" type="StaticBody3D" parent="ParedDerecha"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.23048, 0)
+[node name="FreeWall" type="MeshInstance3D" parent="ParedDerecha/Cuadro3"]
+transform = Transform3D(-0.026334, 0, -0.999653, 0, 1, 0, 0.999653, 0, -0.026334, 0.454216, 2.52841, 4.04151)
+mesh = ExtResource("3_ro5ex")
+skeleton = NodePath("../../Cuadro2/MeshInstance3D")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="ParedDerecha/Cuadro4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.7598, 5.72138, 3.76817)
-mesh = SubResource("BoxMesh_6i7m5")
+[node name="Label3D" type="Label3D" parent="ParedDerecha/Cuadro3/FreeWall"]
+transform = Transform3D(-4.28408e-08, 0, 1, 0, 1, 0, -1, 0, -4.28408e-08, 0.345675, 1.95172, 1.61727)
+text = "OBRA:
+\"Lavanderas del Sena\" (1887), es un óleo sobre lienzo de 
+grandes dimensiones que captura una escena cotidiana 
+a orillas del río Sena en París. 
+La pintura representa a un grupo de mujeres trabajando 
+arduamente en la tarea de lavar ropa. Se las observa 
+inclinadas sobre el río, frotando y enjuagando prendas, 
+con la ropa extendida para secar en las cercanías. 
+La composición se caracteriza por una perspectiva amplia
+ que abarca la actividad de las lavanderas y el paisaje 
+fluvial circundante."
+font = SubResource("FontFile_81te7")
+font_size = 26
+horizontal_alignment = 0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedDerecha/Cuadro4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8718, 5.54, 3.77033)
-shape = SubResource("BoxShape3D_nsaj0")
+[node name="Label3D" type="Label3D" parent="ParedDerecha/Cuadro3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.03888, 3.82783, 3.748)
+text = "Lavanderas del Sena. 1887. Óleo sobre lienzo. 2,00 x 3,00. 
+Firmado abajo a la derecha: A. de Santa María 1887. 
+Museo Nacional, Bogotá.  
+"
+font_size = 26
+horizontal_alignment = 0
 
 [node name="ParedIzquierda" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.132452, 13.7614)
+
+[node name="FreeWall" type="MeshInstance3D" parent="ParedIzquierda"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.367, 1, -4.667)
+mesh = ExtResource("3_ro5ex")
+
+[node name="Label3D" type="Label3D" parent="ParedIzquierda/FreeWall"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.255609, 1.89196, 1.66475)
+text = "OBRA:
+\"Paisaje de Macuto (El Río)\" (1904) es un óleo que 
+representa un paisaje fluvial en la región de Macuto, 
+probablemente en Venezuela, La obra se centra en 
+la representación del río, la vegetación circundante 
+y la atmósfera del lugar. Se puede esperar que la 
+pintura capture la luz tropical y los colores vibrantes 
+característicos del paisaje caribeño. El tratamiento 
+del río podría variar, mostrando su movimiento, 
+sus reflejos y la vegetación que crece a sus orillas.
+"
+font_size = 26
+horizontal_alignment = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ParedIzquierda"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.09207, 3.72635, -3.85561)
@@ -249,9 +762,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.092, 3.85, -3.858)
 mesh = SubResource("BoxMesh_16fbc")
 
 [node name="Cuadro" type="StaticBody3D" parent="ParedIzquierda"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.85255, -1.50151, -13.7342)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.93553, -1.50151, -13.7342)
 physics_material_override = SubResource("PhysicsMaterial_sdlci")
-script = ExtResource("3_ro5ex")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ParedIzquierda/Cuadro"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.76551, 4.9402, 9.8498)
@@ -261,15 +773,22 @@ shape = SubResource("BoxShape3D_ro5ex")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.76996, 5.10937, 9.81349)
 mesh = SubResource("BoxMesh_ro5ex")
 
-[node name="Area3D" type="Area3D" parent="ParedIzquierda/Cuadro/MeshInstance3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.886904, -5.10937, -9.81349)
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedIzquierda/Cuadro/MeshInstance3D"]
+transform = Transform3D(-0.999937, 0, -0.0111872, 0, 1, 0, 0.0111872, 0, -0.999937, -0.0100136, 0.0319221, -0.0227165)
+mesh = SubResource("PlaneMesh_n6mcp")
+skeleton = NodePath("../../../../ParedDelantera/Cuadro")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedIzquierda/Cuadro/MeshInstance3D/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.21285, 4.59649, 7.74049)
-shape = SubResource("BoxShape3D_4feti")
+[node name="Label3D" type="Label3D" parent="ParedIzquierda/Cuadro"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.03055, 2.83456, 9.74661)
+text = "Paisaje de Macuto (El Río). 1904. 
+Óleo sobre lienzo. 0,40 x 0,50. 
+Sin firma. Museo de Arte Moderno, Bogotá."
+font = SubResource("FontFile_nsaj0")
+font_size = 26
+horizontal_alignment = 0
 
 [node name="Cuadro2" type="StaticBody3D" parent="ParedIzquierda"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.446, -1.71842, 0.0321026)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.89713, -1.71842, 0.0321026)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="ParedIzquierda/Cuadro2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.47253, -4.0045)
@@ -279,8 +798,62 @@ mesh = SubResource("BoxMesh_sucen")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.648, -4)
 shape = SubResource("BoxShape3D_etxps")
 
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedIzquierda/Cuadro2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.0442286, 5.54535, -4.11679)
+mesh = SubResource("PlaneMesh_i5l27")
+
+[node name="FreeWall2" type="MeshInstance3D" parent="ParedIzquierda/Cuadro2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.51891, 2.71842, -4.2151)
+mesh = ExtResource("3_ro5ex")
+skeleton = NodePath("../..")
+
+[node name="Obra" type="Label3D" parent="ParedIzquierda/Cuadro2/FreeWall2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.279222, 1.66351, 1.81249)
+text = "OBRA:
+\"Las Segadoras\" (1895) es un óleo sobre lienzo
+la cual representa una escena de la vida rural
+ y el trabajo agrícola. La pintura muestra a un 
+grupo de mujeres campesinas dedicadas a la 
+tarea de segar el trigo o algún otro cereal en un campo.
+La composición se centra en la actividad de estas
+ trabajadoras, capturando sus movimientos, sus posturas 
+y la atmósfera del entorno rural. Cano presta atención al 
+realismo en la representación de las figuras, sus vestimentas 
+sencillas y las herramientas de trabajo, como las hoces. 
+La luz juega un papel importante al iluminar las figuras y el
+ paisaje, creando contrastes y resaltando la laboriosa escena 
+bajo el sol."
+font_size = 26
+horizontal_alignment = 0
+
+[node name="Label3D2" type="Label3D" parent="ParedIzquierda/Cuadro2/FreeWall2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.25407, 4.41929, 1.85718)
+text = "BIOGRAFIA:
+Francisco Antonio Cano (1865-1935) fue un destacado 
+artista colombiano, nacido en Yarumal, Antioquia. 
+Se destacó como pintor, escultor, dibujante, grabador, 
+escritor y educador, dejando una huella significativa en 
+el arte de su país.
+Cano estudió pintura con Ángel María Palomino y técnicas 
+de dibujo con Horacio Rodríguez Marino. Posteriormente, 
+se formó en Bogotá y París. Fue un pionero de la prensa 
+ilustrada en Antioquia y fundó la revista Lectura y Arte junto 
+con el escultor Marco Tobón Mejía."
+font = SubResource("FontFile_n6mcp")
+font_size = 26
+horizontal_alignment = 0
+
+[node name="Label3D" type="Label3D" parent="ParedIzquierda/Cuadro2"]
+transform = Transform3D(-1, 0, 0.000471361, 0, 1, 0, -0.000471361, 0, -1, 1.30541, 3.61595, -4.04605)
+text = "Las Segadoras. 1895. 
+Óleo sobre lienzo. 0.80 x 1.06. Sin firma. 
+Museo de Arte Moderno. Bogotá. "
+font = SubResource("FontFile_cttjf")
+font_size = 26
+horizontal_alignment = 0
+
 [node name="Cuadro3" type="StaticBody3D" parent="ParedIzquierda"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.64621, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.3943, -1.64621, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ParedIzquierda/Cuadro3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.63476, 5.26409, -3.47224)
@@ -290,19 +863,79 @@ shape = SubResource("BoxShape3D_3vlto")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.68623, 5.35046, -3.95834)
 mesh = SubResource("BoxMesh_ihgp6")
 
-[node name="Cuadro4" type="StaticBody3D" parent="ParedIzquierda"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.23442, 0)
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedIzquierda/Cuadro3"]
+transform = Transform3D(-0.995251, 0, -0.0973397, 0, 1, 0, 0.0973397, 0, -0.995251, -6.78619, 5.40114, -4.10774)
+mesh = SubResource("PlaneMesh_rl3f8")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedIzquierda/Cuadro4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.9755, 4.8746, -3.9872)
-shape = SubResource("BoxShape3D_aok35")
+[node name="Label3D" type="Label3D" parent="ParedIzquierda/Cuadro3"]
+transform = Transform3D(-0.996819, 0, 0.0796944, 0, 1, 0, -0.0796944, 0, -0.996819, -6.4904, 3.50363, -4.01839)
+text = "Figura en Fondo Verde. 1910. 
+Óleo sobre lienzo. 
+0,50 x 0,39. Sin firma. Museo Nacional, Bogotá.  "
+font_size = 26
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="ParedIzquierda/Cuadro4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.1704, 4.84522, -4.02934)
-mesh = SubResource("BoxMesh_nsaj0")
+[node name="FreeWall2" type="MeshInstance3D" parent="ParedIzquierda"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -14.9784, 1, -4.29215)
+mesh = ExtResource("3_ro5ex")
+
+[node name="Label3D" type="Label3D" parent="ParedIzquierda/FreeWall2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.337438, 1.92863, 1.85677)
+text = "OBRA:
+\"Figura en Fondo Verde\" (1910) es un óleo sobre 
+lienzo que presenta una figura humana como 
+motivo principal, destacándose sobre un fondo 
+predominantemente verde. La identidad precisa
+ de la figura no se especifica en el título, lo que
+ sugiere que la atención del espectador se centra 
+en la representación de la forma humana y su 
+interacción con el color del fondo. La composición 
+probablemente sitúa a la figura en primer plano o 
+en un espacio donde el verde del fondo crea una 
+atmósfera particular, quizás de tranquilidad, misterio 
+o un cierto estado emocional."
+font = SubResource("FontFile_gpd4b")
+font_size = 26
+horizontal_alignment = 0
+
+[node name="Label3D2" type="Label3D" parent="ParedIzquierda/FreeWall2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.02764, 0)
 
 [node name="ParedDelantera" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.84191, -0.776527, 0)
+
+[node name="FreeWall" type="MeshInstance3D" parent="ParedDelantera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.7576, 1.80377, -1.01182)
+mesh = ExtResource("3_ro5ex")
+skeleton = NodePath("../../Piso")
+
+[node name="Label3D" type="Label3D" parent="ParedDelantera/FreeWall"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.306688, 4.32274, 1.73189)
+text = "\"El Sombrero de Flores\" (1930) de Andrés de Santa María 
+es un óleo sobre lienzo de dimensiones más íntimas 
+(0,61 x 0,51 metros). La pintura representa un bodegón 
+o naturaleza muerta donde un sombrero es el elemento 
+central, adornado con una variedad de flores. se enfoca 
+en la disposición y la belleza de los objetos inanimados.
+ El sombrero se convierte en un soporte para una
+ explosión de color y forma, gracias a las diversas 
+flores que lo adornan."
+font_size = 26
+horizontal_alignment = 0
+
+[node name="Label3D2" type="Label3D" parent="ParedDelantera/FreeWall"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.266254, 2.06787, 1.95446)
+text = "\"Las Manzanas\" (1934) es un óleo sobre lienzo de dimensiones 
+relativamente pequeñas (0,24 x 0,31 metros), típico de un
+ bodegón o naturaleza muerta. La pintura representa un grupo
+ de manzanas dispuestas de manera sencilla sobre una superficie.
+En esta obra, Santa María se centra en la representación de la fruta,
+ explorando sus formas redondeadas, sus colores (que 
+probablemente varían entre tonos rojos, verdes y amarillos), y las 
+sutiles variaciones de luz y sombra que modelan su volumen.
+"
+font = SubResource("FontFile_4feti")
+font_size = 26
+horizontal_alignment = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ParedDelantera"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -28.0585, 5.0044, 0)
@@ -312,15 +945,60 @@ shape = SubResource("BoxShape3D_3sxtb")
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -29.0387, 4.84162, 0)
 mesh = SubResource("BoxMesh_x06y2")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedDelantera"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9981, 4.11517, 0.864907)
-mesh = SubResource("BoxMesh_3vlto")
+[node name="Cuadro" type="StaticBody3D" parent="ParedDelantera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.439071, 2.50651)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedDelantera/Cuadro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9343, 4.62314, 1.68525)
+shape = SubResource("BoxShape3D_ah64o")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ParedDelantera/Cuadro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.9307, 4.5315, 1.63603)
+mesh = SubResource("BoxMesh_h7wrj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedDelantera/Cuadro"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -28.928, 4.56404, 1.61301)
+mesh = SubResource("PlaneMesh_81te7")
+
+[node name="Label3D" type="Label3D" parent="ParedDelantera/Cuadro"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -28.8529, 2.63867, 3.37959)
+text = "Las Manzanas. 1934. Óleo sobre lienzo. 0,24 x 0,31. 
+Firmado abajo a la izquierda: A. de Santa María. 
+Colección particular, Bogotá. 
+"
+font_size = 26
+horizontal_alignment = 0
+
+[node name="Cuadro2" type="StaticBody3D" parent="ParedDelantera"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedDelantera/Cuadro2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.8611, 4.96171, -6.16995)
+shape = SubResource("BoxShape3D_o2jr4")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ParedDelantera/Cuadro2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.8302, 4.971, -6.12309)
+mesh = SubResource("BoxMesh_60olc")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedDelantera/Cuadro2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -28.7999, 5.01103, -6.12271)
+mesh = SubResource("PlaneMesh_gpd4b")
+
+[node name="Label3D" type="Label3D" parent="ParedDelantera/Cuadro2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -28.9804, 2.876, -6.0538)
+text = "El Sombrero de Flores. 1930. 
+Óleo sobre lienzo. 0,61 x 0,51. 
+Firmado abajo a la derecha: A. de Santa María. 
+Museo Nacional, Bogotá.  "
 
 [node name="ParedTrasera" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1106, -1.01636, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1106, -1.01636, -5.96526)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ParedTrasera"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 4.87722, 0)
+shape = SubResource("BoxShape3D_5oq03")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="ParedTrasera"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 4.87722, 12.6297)
 shape = SubResource("BoxShape3D_5oq03")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="ParedTrasera"]
@@ -329,12 +1007,34 @@ mesh = SubResource("BoxMesh_e66l3")
 skin = SubResource("Skin_sucen")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="ParedTrasera"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.73131, 0)
-mesh = SubResource("BoxMesh_etxps")
-surface_material_override/0 = SubResource("StandardMaterial3D_s74jf")
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 5.22761, 11.8908)
+mesh = SubResource("BoxMesh_e66l3")
+skin = SubResource("Skin_sucen")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="ParedTrasera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0234604, 8.09818, 6.04708)
+mesh = SubResource("BoxMesh_ah64o")
 
 [node name="Techo" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.14719, 0)
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="Techo"]
+transform = Transform3D(-0.408843, 0.912444, -0.0171349, 0.00387749, 0.0205124, 0.999782, 0.912597, 0.408687, -0.0119243, -10.8327, 2.28788, 1.56452)
+light_energy = 16.0
+shadow_enabled = true
+shadow_normal_bias = 0.1
+spot_range = 259.785
+spot_angle = 89.0
+spot_angle_attenuation = 0.57435
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="Techo"]
+transform = Transform3D(-0.408843, 0.912444, -0.0171349, 0.00387749, 0.0205124, 0.999782, 0.912597, 0.408687, -0.0119243, 4.26809, 1.30551, 0.970364)
+light_energy = 16.0
+shadow_enabled = true
+shadow_normal_bias = 0.1
+spot_range = 4096.0
+spot_angle = 89.0
+spot_angle_attenuation = 0.353554
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Techo"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 3.05, 0)
@@ -343,38 +1043,3 @@ shape = SubResource("BoxShape3D_4cdag")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Techo"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.721, 0)
 mesh = SubResource("BoxMesh_sdlci")
-
-[node name="DirectionalLight3D4" type="DirectionalLight3D" parent="Techo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.64289, 2.30927, 4.9522)
-
-[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="Techo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.95971, 2.324, 4.97971)
-
-[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="Techo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.73563, 2.30519, -4.93715)
-
-[node name="DirectionalLight3D6" type="DirectionalLight3D" parent="Techo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.83079, 1.30169, -4.68447)
-
-[node name="DirectionalLight3D7" type="DirectionalLight3D" parent="Techo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.8061, 2.5655, -4.74318)
-
-[node name="DirectionalLight3D8" type="DirectionalLight3D" parent="Techo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.8798, 1.28303, 5.21365)
-
-[node name="SpawnPoint" type="Marker3D" parent="." groups=["Player"]]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3, 6.32625, 4)
-
-[node name="paso1" type="Area3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.06358, 0.0930862, -0.002085)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="paso1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.4287, 0.307544, 0)
-mesh = SubResource("BoxMesh_s74jf")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="paso1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.4965, 0.317293, 0)
-shape = SubResource("BoxShape3D_sdlci")
-
-[connection signal="body_entered" from="ParedIzquierda/Cuadro/MeshInstance3D/Area3D" to="ParedIzquierda/Cuadro" method="_on_area_3d_body_entered"]
-[connection signal="body_exited" from="ParedIzquierda/Cuadro/MeshInstance3D/Area3D" to="ParedIzquierda/Cuadro" method="_on_area_3d_body_exited"]
