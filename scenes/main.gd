@@ -4,6 +4,7 @@ extends Node
 @onready var option_menu = $option
 @onready var acces_menu = $Accesibilidad
 @onready var menu_principal = $MenuPrincipal
+@onready var controles = $Controles
 @onready var color_filter = $PauseMenu/ColorRect
 
 
@@ -145,3 +146,12 @@ func _on_daltonismo_button_item_selected(index: int) -> void:
 
 func _on_brillo_slider_value_changed(value: float) -> void:
 	Globalsettings.set_brightness(value)
+
+
+func _on_regresar_menu_principal_pressed() -> void:
+	controles.hide()
+	menu_principal.show()
+
+func _on_button_opcionescontroles_pressed() -> void:
+	menu_principal.hide()
+	controles.show()

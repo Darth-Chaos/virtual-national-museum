@@ -1088,6 +1088,7 @@ theme = SubResource("Theme_kn4i6")
 text = "Quitar"
 
 [node name="MenuPrincipal" parent="." instance=ExtResource("23_wjff0")]
+visible = false
 script = ExtResource("24_kn4i6")
 
 [node name="PanelContainer" type="PanelContainer" parent="MenuPrincipal"]
@@ -1156,7 +1157,8 @@ offset_top = 81.0
 offset_right = 804.0
 offset_bottom = 126.0
 theme = SubResource("Theme_kn4i6")
-text = "Opciones"
+text = "Controles.
+"
 
 [node name="Quit" type="Control" parent="MenuPrincipal/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -1172,6 +1174,77 @@ offset_right = 804.0
 offset_bottom = 126.0
 theme = SubResource("Theme_kn4i6")
 text = "Quitar"
+
+[node name="Controles" parent="." instance=ExtResource("23_wjff0")]
+visible = false
+script = ExtResource("24_kn4i6")
+
+[node name="PanelContainer" type="PanelContainer" parent="Controles"]
+offset_right = 1200.0
+offset_bottom = 680.0
+
+[node name="ColorRect" type="ColorRect" parent="Controles/PanelContainer"]
+layout_mode = 2
+color = Color(0.215902, 0.215902, 0.215902, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="Controles"]
+offset_left = 6.0
+offset_right = 1206.0
+offset_bottom = 680.0
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Controles/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 60
+alignment = 1
+script = ExtResource("36_30fw8")
+
+[node name="Titulo" type="Control" parent="Controles/MarginContainer/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "gfggdfgdfgdfgdgdfgd"
+mouse_filter = 1
+theme = ExtResource("24_h1rib")
+
+[node name="Button" type="Button" parent="Controles/MarginContainer/VBoxContainer/Titulo"]
+layout_mode = 1
+offset_left = -11.0
+offset_top = -271.0
+offset_right = 796.0
+offset_bottom = 213.0
+theme = SubResource("Theme_kn4i6")
+text = "Controles del usuario
+Movimiento:
+W – Avanzar
+S – Retroceder
+A – Mover a la izquierda
+D – Mover a la derecha
+Estas teclas permiten al usuario desplazarse libremente 
+por las salas del museo virtual, como si estuviera
+ caminando en primera persona
+Menú de Pausa:
+ESC – Abrir menú de pausa
+Presionar ESC permite al usuario acceder al menú de pausa, desde donde puede:
+Reanudar el recorrido
+Ajustar opciones
+Salir al menú principal"
+
+[node name="Quit" type="Control" parent="Controles/MarginContainer/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "gfggdfgdfgdfgdgdfgd"
+mouse_filter = 1
+theme = ExtResource("24_h1rib")
+
+[node name="Button" type="Button" parent="Controles/MarginContainer/VBoxContainer/Quit"]
+layout_mode = 1
+offset_left = -7.0
+offset_top = 167.0
+offset_right = 793.0
+offset_bottom = 212.0
+theme = SubResource("Theme_kn4i6")
+text = "Regresar"
 
 [node name="Accesibilidad" parent="." instance=ExtResource("23_wjff0")]
 visible = false
@@ -1472,8 +1545,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.2842, -0.531361, -16.3671
 [connection signal="pressed" from="PauseMenu/MarginContainer/VBoxContainer/option/Button" to="." method="_on_option_button_pressed"]
 [connection signal="pressed" from="PauseMenu/MarginContainer/VBoxContainer/Quit/Button" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="MenuPrincipal/MarginContainer/VBoxContainer/iniciar/Button" to="." method="_on_button_inicio_pressed"]
-[connection signal="pressed" from="MenuPrincipal/MarginContainer/VBoxContainer/Opciones/Button" to="." method="_on_option_prin_button_pressed"]
+[connection signal="pressed" from="MenuPrincipal/MarginContainer/VBoxContainer/Opciones/Button" to="." method="_on_button_opcionescontroles_pressed"]
 [connection signal="pressed" from="MenuPrincipal/MarginContainer/VBoxContainer/Quit/Button" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Controles/MarginContainer/VBoxContainer/Quit/Button" to="." method="_on_regresar_menu_principal_pressed"]
 [connection signal="value_changed" from="Accesibilidad/MarginContainer/VBoxContainer/brightness/BrilloSlider2" to="." method="_on_brillo_slider_value_changed"]
 [connection signal="pressed" from="Accesibilidad/MarginContainer/VBoxContainer/Continue/Button" to="." method="_on_button_regresar_menu_pressed"]
 [connection signal="pressed" from="Accesibilidad/MarginContainer/VBoxContainer/Quit/Button" to="." method="_on_quit_pressed"]
