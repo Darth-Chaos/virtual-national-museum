@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bvpcywxdafqkh"
+path="res://.godot/imported/20_julio.mp3-8c4ede28273fb7bef22d52b8197cc0f2.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/Pictures Voices/20_julio.mp3"
+dest_files=["res://.godot/imported/20_julio.mp3-8c4ede28273fb7bef22d52b8197cc0f2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

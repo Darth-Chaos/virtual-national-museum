@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bbplmowkixipu"
+path="res://.godot/imported/figura_fondo_verde.mp3-4ea04cc7aef8393653b8b1130c6825b8.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/Pictures Voices/figura_fondo_verde.mp3"
+dest_files=["res://.godot/imported/figura_fondo_verde.mp3-4ea04cc7aef8393653b8b1130c6825b8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

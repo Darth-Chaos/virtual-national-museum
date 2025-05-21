@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2dgociq62ip7"
+path="res://.godot/imported/los_fusileros.mp3-9e0cb80e1dd85753c70a136fedeffce1.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/Pictures Voices/los_fusileros.mp3"
+dest_files=["res://.godot/imported/los_fusileros.mp3-9e0cb80e1dd85753c70a136fedeffce1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

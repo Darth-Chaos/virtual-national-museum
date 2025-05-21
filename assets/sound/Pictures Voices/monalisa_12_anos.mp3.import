@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cpgyt4umj4kqf"
+path="res://.godot/imported/monalisa_12_anos.mp3-216530af12ac46474f6f319dc6181024.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/Pictures Voices/monalisa_12_anos.mp3"
+dest_files=["res://.godot/imported/monalisa_12_anos.mp3-216530af12ac46474f6f319dc6181024.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
