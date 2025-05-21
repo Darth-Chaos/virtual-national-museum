@@ -7,6 +7,7 @@ extends Node
 @onready var color_filter = $PauseMenu/ColorRect
 
 
+
 var paused = false
 
 
@@ -56,8 +57,7 @@ func _on_quit_pressed():
 #	option_menu.show()
 
 
-func _on_brillo_slider_value_changed(value: float) -> void:
-	Globalsettings.set_brightness(value)
+
 
 
 func _on_slider_master_vol_value_changed(value: float) -> void:
@@ -141,3 +141,7 @@ func _on_daltonismo_button_item_selected(index: int) -> void:
 			_set_modo_daltonismo("deuteranopia")
 		3:
 			_set_modo_daltonismo("tritanopia")
+
+
+func _on_brillo_slider_value_changed(value: float) -> void:
+	Globalsettings.set_brightness(value)
