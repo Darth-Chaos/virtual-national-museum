@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c4aqx5jsoh8xy"
+path="res://.godot/imported/flores_abstracto.mp3-ab9ef0489415ee7bf0ff846f2f04c5ea.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/Pictures Voices/flores_abstracto.mp3"
+dest_files=["res://.godot/imported/flores_abstracto.mp3-ab9ef0489415ee7bf0ff846f2f04c5ea.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bs5mf3jko08iy"
+path="res://.godot/imported/lavanderas_sena.mp3-710c7f75f601da01972e4634ac8b335f.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/Pictures Voices/lavanderas_sena.mp3"
+dest_files=["res://.godot/imported/lavanderas_sena.mp3-710c7f75f601da01972e4634ac8b335f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

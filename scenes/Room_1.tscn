@@ -1,4 +1,4 @@
-[gd_scene load_steps=90 format=3 uid="uid://dd1vddelktxe"]
+[gd_scene load_steps=97 format=3 uid="uid://dd1vddelktxe"]
 
 [ext_resource type="Texture2D" uid="uid://bg7gdf7b5halo" path="res://materials/madera.jpg" id="1_s74jf"]
 [ext_resource type="Texture2D" uid="uid://jlpwcspytbbf" path="res://materials/1.jpg" id="2_sdlci"]
@@ -6,11 +6,18 @@
 [ext_resource type="Texture2D" uid="uid://b6r3jig43m832" path="res://assets/textures/Room1/autoretrato andres de santa maria.jpg" id="4_3vlto"]
 [ext_resource type="Texture2D" uid="uid://wmw5heqedan7" path="res://assets/textures/Room1/fusileros.jpg" id="5_sucen"]
 [ext_resource type="Texture2D" uid="uid://c2x1jwj236065" path="res://assets/textures/Room1/Lavanderas_Sena.jpg" id="6_etxps"]
+[ext_resource type="AudioStream" uid="uid://b2dgociq62ip7" path="res://assets/sound/Pictures Voices/los_fusileros.mp3" id="6_f22et"]
 [ext_resource type="Texture2D" uid="uid://74qe5fyorjvs" path="res://assets/textures/Room1/Manzanas.jpg" id="7_4feti"]
 [ext_resource type="Texture2D" uid="uid://l0ndp3cj74yd" path="res://assets/textures/Room1/segadoras.jpg" id="7_6i7m5"]
 [ext_resource type="Texture2D" uid="uid://pejay6y5u3m" path="res://assets/textures/Room1/FondoVerde.jpg" id="7_aok35"]
 [ext_resource type="Texture2D" uid="uid://c8uk6m1bbisma" path="res://assets/textures/Room1/Macuto.jpg" id="7_nsaj0"]
 [ext_resource type="Texture2D" uid="uid://dvb1ld01w1r2" path="res://assets/textures/Room1/SombreroFlores.jpg" id="8_aok35"]
+[ext_resource type="AudioStream" uid="uid://bs5mf3jko08iy" path="res://assets/sound/Pictures Voices/lavanderas_sena.mp3" id="8_n6mcp"]
+[ext_resource type="AudioStream" uid="uid://myhfxm80w7xs" path="res://assets/sound/Pictures Voices/paisaje_macuto.mp3" id="10_cttjf"]
+[ext_resource type="AudioStream" uid="uid://bfcout0wjh6h4" path="res://assets/sound/Pictures Voices/las_segadoras.mp3" id="12_ty82m"]
+[ext_resource type="AudioStream" uid="uid://bbplmowkixipu" path="res://assets/sound/Pictures Voices/figura_fondo_verde.mp3" id="14_2ru1a"]
+[ext_resource type="AudioStream" uid="uid://bpq4hgrqmkfnj" path="res://assets/sound/Pictures Voices/las_manzanas.mp3" id="16_uqx7d"]
+[ext_resource type="AudioStream" uid="uid://b5cx1jsuulh11" path="res://assets/sound/Pictures Voices/sombrero_flores.mp3" id="18_ik33c"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_16fbc"]
 size = Vector3(30, 0.1, 20)
@@ -257,6 +264,9 @@ cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
 
 [sub_resource type="FontFile" id="FontFile_ik33c"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/32/0/ascent = 0.0
 cache/0/32/0/descent = 0.0
 cache/0/32/0/underline_position = 0.0
@@ -274,6 +284,9 @@ cache/0/26/0/underline_thickness = 0.0
 cache/0/26/0/scale = 1.0
 
 [sub_resource type="FontFile" id="FontFile_2ru1a"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/26/0/ascent = 0.0
 cache/0/26/0/descent = 0.0
 cache/0/26/0/underline_position = 0.0
@@ -354,6 +367,9 @@ size = Vector2(3.5, 2.5)
 orientation = 0
 
 [sub_resource type="FontFile" id="FontFile_uqx7d"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/26/0/ascent = 0.0
 cache/0/26/0/descent = 0.0
 cache/0/26/0/underline_position = 0.0
@@ -414,6 +430,9 @@ size = Vector2(2.5, 2.5)
 orientation = 2
 
 [sub_resource type="FontFile" id="FontFile_ty82m"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/26/0/ascent = 0.0
 cache/0/26/0/descent = 0.0
 cache/0/26/0/underline_position = 0.0
@@ -466,6 +485,9 @@ cache/0/26/0/underline_thickness = 0.0
 cache/0/26/0/scale = 1.0
 
 [sub_resource type="FontFile" id="FontFile_rl3f8"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/26/0/ascent = 0.0
 cache/0/26/0/descent = 0.0
 cache/0/26/0/underline_position = 0.0
@@ -526,6 +548,9 @@ size = Vector2(3.5, 2.5)
 orientation = 2
 
 [sub_resource type="FontFile" id="FontFile_i5l27"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/26/0/ascent = 0.0
 cache/0/26/0/descent = 0.0
 cache/0/26/0/underline_position = 0.0
@@ -556,6 +581,9 @@ size = Vector2(2.5, 2.5)
 orientation = 2
 
 [sub_resource type="FontFile" id="FontFile_f22et"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/32/0/ascent = 0.0
 cache/0/32/0/descent = 0.0
 cache/0/32/0/underline_position = 0.0
@@ -807,6 +835,16 @@ Sin firma.
 font_size = 26
 outline_size = 20
 
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ParedDerecha/Cuadro2"]
+transform = Transform3D(-0.999996, 0, -0.00287977, -0.00128661, 0.894646, 0.446774, 0.00257637, 0.446776, -0.894642, 7.7699, 7.74786, 4.6003)
+stream = ExtResource("6_f22et")
+volume_db = 8.0
+unit_size = 100.0
+autoplay = true
+max_distance = 8.0
+emission_angle_enabled = true
+emission_angle_degrees = 58.0
+
 [node name="Cuadro3" type="StaticBody3D" parent="ParedDerecha"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.76066, -0.999592, 0)
 
@@ -880,6 +918,16 @@ font_size = 26
 outline_size = 20
 horizontal_alignment = 3
 
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="ParedDerecha/Cuadro3"]
+transform = Transform3D(-0.999996, 0, -0.00287977, -0.00122692, 0.904701, 0.426046, 0.00260533, 0.426048, -0.904697, -0.0720196, 7.74786, 4.6003)
+stream = ExtResource("8_n6mcp")
+volume_db = 8.0
+unit_size = 100.0
+autoplay = true
+max_distance = 8.0
+emission_angle_enabled = true
+emission_angle_degrees = 57.0
+
 [node name="ParedIzquierda" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.132452, 13.7614)
 
@@ -938,6 +986,16 @@ Sin firma. Museo de Arte Moderno, Bogotá."
 font = SubResource("FontFile_nsaj0")
 font_size = 26
 horizontal_alignment = 0
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ParedIzquierda/Cuadro"]
+transform = Transform3D(0.920678, -0.304528, 0.244159, 0.0212755, 0.663757, 0.747646, -0.389742, -0.683147, 0.617585, 4.65533, 7.96426, 9.35107)
+stream = ExtResource("10_cttjf")
+volume_db = 8.0
+unit_size = 100.0
+autoplay = true
+max_distance = 8.0
+emission_angle_enabled = true
+emission_angle_degrees = 27.0
 
 [node name="Cuadro2" type="StaticBody3D" parent="ParedIzquierda"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.89713, -1.71842, 0.0321026)
@@ -1008,6 +1066,16 @@ font_size = 26
 outline_size = 20
 horizontal_alignment = 0
 
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ParedIzquierda/Cuadro2"]
+transform = Transform3D(0.997288, 0.0386101, -0.0626573, 0.0212755, 0.663757, 0.747646, 0.0704559, -0.746952, 0.661135, -0.876291, 7.96426, -4.84088)
+stream = ExtResource("12_ty82m")
+volume_db = 8.0
+unit_size = 100.0
+autoplay = true
+max_distance = 8.0
+emission_angle_enabled = true
+emission_angle_degrees = 27.0
+
 [node name="Cuadro3" type="StaticBody3D" parent="ParedIzquierda"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.3943, -1.64621, 0)
 
@@ -1032,6 +1100,16 @@ font = SubResource("FontFile_ty82m")
 font_size = 26
 outline_size = 20
 horizontal_alignment = 0
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ParedIzquierda/Cuadro3"]
+transform = Transform3D(0.997288, 0.0386101, -0.0626573, 0.0212755, 0.663757, 0.747646, 0.0704559, -0.746952, 0.661135, -9.53328, 7.96426, -4.84088)
+stream = ExtResource("14_2ru1a")
+volume_db = 8.0
+unit_size = 100.0
+autoplay = true
+max_distance = 8.0
+emission_angle_enabled = true
+emission_angle_degrees = 27.0
 
 [node name="FreeWall2" type="MeshInstance3D" parent="ParedIzquierda"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15.9784, 1, -4.29215)
@@ -1167,6 +1245,16 @@ font_size = 26
 outline_size = 20
 horizontal_alignment = 3
 
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ParedDelantera/Cuadro"]
+transform = Transform3D(-0.0188806, 0.747949, -0.663488, 0.0212755, 0.663757, 0.747646, 0.999595, -2.7951e-09, -0.0284451, -27.9007, 7.4027, -0.0674913)
+stream = ExtResource("16_uqx7d")
+volume_db = 8.0
+unit_size = 100.0
+autoplay = true
+max_distance = 8.0
+emission_angle_enabled = true
+emission_angle_degrees = 27.0
+
 [node name="Cuadro2" type="StaticBody3D" parent="ParedDelantera"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ParedDelantera/Cuadro2"]
@@ -1191,6 +1279,16 @@ font = SubResource("FontFile_f22et")
 font_size = 26
 outline_size = 20
 horizontal_alignment = 0
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="ParedDelantera/Cuadro2"]
+transform = Transform3D(-0.0188806, 0.747949, -0.663488, 0.0212755, 0.663757, 0.747646, 0.999595, 0, -0.0284451, -27.9007, 7.74786, -3.35202)
+stream = ExtResource("18_ik33c")
+volume_db = 8.0
+unit_size = 100.0
+autoplay = true
+max_distance = 8.0
+emission_angle_enabled = true
+emission_angle_degrees = 27.0
 
 [node name="ParedTrasera" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1106, -1.01636, -5.96526)
@@ -1219,6 +1317,25 @@ mesh = SubResource("BoxMesh_ah64o")
 
 [node name="Techo" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.14719, 0)
+visible = false
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="Techo"]
+transform = Transform3D(-0.408843, 0.912444, -0.0171349, 0.00387749, 0.0205124, 0.999782, 0.912597, 0.408687, -0.0119243, -10.8327, 2.28788, 1.56452)
+light_energy = 16.0
+shadow_enabled = true
+shadow_normal_bias = 0.1
+spot_range = 259.785
+spot_angle = 89.0
+spot_angle_attenuation = 0.57435
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="Techo"]
+transform = Transform3D(-0.408843, 0.912444, -0.0171349, 0.00387749, 0.0205124, 0.999782, 0.912597, 0.408687, -0.0119243, 4.26809, 1.30551, 0.970364)
+light_energy = 16.0
+shadow_enabled = true
+shadow_normal_bias = 0.1
+spot_range = 4096.0
+spot_angle = 89.0
+spot_angle_attenuation = 0.353554
 
 [node name="SpotLight3D4" type="SpotLight3D" parent="Techo"]
 transform = Transform3D(-0.408843, 0.912444, -0.0171349, 0.00387749, 0.0205124, 0.999782, 0.912597, 0.408687, -0.0119243, -10.8327, 2.28788, 1.56452)

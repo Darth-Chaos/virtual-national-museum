@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bpq4hgrqmkfnj"
+path="res://.godot/imported/las_manzanas.mp3-419002ccbdb97b2941e008519406a2ba.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/Pictures Voices/las_manzanas.mp3"
+dest_files=["res://.godot/imported/las_manzanas.mp3-419002ccbdb97b2941e008519406a2ba.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
