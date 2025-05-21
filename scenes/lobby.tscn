@@ -40,8 +40,18 @@
 [ext_resource type="AudioStream" uid="uid://jyl8dj7afuue" path="res://assets/sound/Environmental Ambience/water-cascade-65495.mp3" id="30_78rk6"]
 [ext_resource type="Script" uid="uid://bhoev1gv61ea6" path="res://scenes/pasillo_2_paso.gd" id="31_wpcbs"]
 [ext_resource type="PackedScene" uid="uid://b4rdbp0qlgd8s" path="res://scenes/Room_2.tscn" id="32_ierb3"]
-[ext_resource type="Script" uid="uid://biblyecyednkc" path="res://scenes/world_environment.gd" id="33_7rn74"]
+[ext_resource type="Script" uid="uid://bejq6euqx6b1r" path="res://scenes/world_environment.gd" id="33_7rn74"]
 [ext_resource type="Script" uid="uid://b46l8smdaeedm" path="res://scenes/Globalsettings.gd" id="36_30fw8"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7rn74"]
+
+[sub_resource type="Sky" id="Sky_30el1"]
+sky_material = SubResource("ProceduralSkyMaterial_7rn74")
+
+[sub_resource type="Environment" id="Environment_30fw8"]
+background_mode = 2
+sky = SubResource("Sky_30el1")
+adjustment_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_o1atq"]
 size = Vector3(15, 1, 30)
@@ -353,17 +363,6 @@ refraction_scale = 1.0
 uv1_scale = Vector3(3, 2, 1)
 uv1_triplanar_sharpness = 0.00781249
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vwf6o"]
-
-[sub_resource type="Sky" id="Sky_iwi7x"]
-sky_material = SubResource("ProceduralSkyMaterial_vwf6o")
-
-[sub_resource type="Environment" id="Environment_wjff0"]
-background_mode = 2
-sky = SubResource("Sky_iwi7x")
-reflected_light_source = 2
-adjustment_enabled = true
-
 [sub_resource type="Theme" id="Theme_kn4i6"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wpcbs"]
@@ -380,6 +379,10 @@ size = Vector3(3, 0.2, 3)
 
 [node name="Root" type="Node"]
 script = ExtResource("1_kn4i6")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_30fw8")
+script = ExtResource("33_7rn74")
 
 [node name="Player" parent="." instance=ExtResource("3_q60fs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.11147, 0)
@@ -1024,10 +1027,6 @@ transform = Transform3D(-0.766044, 0, -0.642788, 0, 1, 0, 0.642788, 0, -0.766044
 material_override = ExtResource("21_iwi7x")
 mesh = ExtResource("16_wjff0")
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_wjff0")
-script = ExtResource("33_7rn74")
-
 [node name="PauseMenu" parent="." instance=ExtResource("23_wjff0")]
 visible = false
 script = ExtResource("24_kn4i6")
@@ -1200,10 +1199,9 @@ theme = ExtResource("24_h1rib")
 
 [node name="BrilloSlider" type="HSlider" parent="Accesibilidad/MarginContainer/VBoxContainer/brightness"]
 layout_mode = 0
-offset_left = 150.0
-offset_top = 16.0
-offset_right = 797.0
-offset_bottom = 32.0
+offset_left = 149.0
+offset_right = 796.0
+offset_bottom = 16.0
 max_value = 2.0
 step = 0.1
 value = 1.0
@@ -1474,7 +1472,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.2842, -0.531361, -16.3671
 [connection signal="pressed" from="MenuPrincipal/MarginContainer/VBoxContainer/Opciones/Button" to="." method="_on_option_prin_button_pressed"]
 [connection signal="pressed" from="MenuPrincipal/MarginContainer/VBoxContainer/Quit/Button" to="." method="_on_quit_pressed"]
 [connection signal="value_changed" from="Accesibilidad/MarginContainer/VBoxContainer/brightness/BrilloSlider" to="." method="_on_brillo_slider_value_changed"]
-[connection signal="item_selected" from="Accesibilidad/MarginContainer/VBoxContainer/Accessibility/OptionButton" to="." method="_on_daltonismo_button_item_selected"]
 [connection signal="pressed" from="Accesibilidad/MarginContainer/VBoxContainer/Continue/Button" to="." method="_on_button_regresar_menu_pressed"]
 [connection signal="pressed" from="Accesibilidad/MarginContainer/VBoxContainer/Quit/Button" to="." method="_on_quit_pressed"]
 [connection signal="value_changed" from="option/MarginContainer/VBoxContainer/MasterVol/SliderMasterVol" to="." method="_on_slider_master_vol_value_changed"]

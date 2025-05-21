@@ -23,6 +23,10 @@ func _process(_delta: float) -> void:
 
 
 func pauseMenu():
+	# Si el menú principal está visible, no permitir pausa
+	if $MenuPrincipal.visible:
+		return
+		
 	paused = not paused
 
 	if paused:
@@ -54,6 +58,7 @@ func _on_quit_pressed():
 
 func _on_brillo_slider_value_changed(value: float) -> void:
 	Globalsettings.set_brightness(value)
+
 
 func _on_slider_master_vol_value_changed(value: float) -> void:
 	Globalsettings.update_master_vol(0, value)
@@ -125,7 +130,7 @@ func _set_modo_daltonismo(tipo: String):
 					var mat_dup = mat.duplicate()
 					mat_dup.albedo_color = color_fondo
 					node.set_surface_override_material(i, mat_dup)
-					
+
 func _on_daltonismo_button_item_selected(index: int) -> void:
 	match index:
 		0:
