@@ -969,6 +969,53 @@ max_distance = 8.0
 emission_angle_enabled = true
 emission_angle_degrees = 27.0
 
+[node name="FreeWall" type="MeshInstance3D" parent="ParedIzquierda/Cuadro"]
+transform = Transform3D(-0.999773, 0, -0.0213263, 0, 1, 0, 0.0213263, 0, -0.999773, 4.8814, 2.50151, 5.85433)
+mesh = ExtResource("3_o2jr4")
+skeleton = NodePath("../..")
+
+[node name="Label3D" type="Label3D" parent="ParedIzquierda/Cuadro/FreeWall"]
+transform = Transform3D(-4.28408e-08, 0, 1, 0, 1, 0, -1, 0, -4.28408e-08, 0.323572, 1.68545, -0.0467057)
+text = "OBRA:
+\"Apuntes de la Sabana\", realizada entre 1900 y 1915 por 
+Roberto Páramo Dada su naturaleza de \"apuntes\", es probable 
+que capturen momentos específicos de la luz, la atmósfera o 
+elementos particulares del entorno, como la vegetación, las 
+formaciones nubosas o la topografía. La técnica podría ser más 
+suelta y espontánea que en obras de mayor formato, buscando 
+registrar impresiones visuales de manera concisa. La paleta de 
+colores estaría ligada a los tonos característicos de la sabana, 
+con variaciones según la hora del día y las condiciones climáticas. 
+Estas pequeñas pinturas ofrecen una visión íntima y fragmentada 
+de la mirada del artista hacia este paisaje."
+font = SubResource("FontFile_w7uke")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 3
+
+[node name="Label3D2" type="Label3D" parent="ParedIzquierda/Cuadro/FreeWall"]
+transform = Transform3D(-4.28408e-08, 0, 1, 0, 1, 0, -1, 0, -4.28408e-08, 0.363273, 4.23434, 0.151169)
+text = "Biografía de Roberto Páramo (1853-1920)
+Roberto Páramo fue un pintor colombiano nacido 
+en Guasca, Cundinamarca. Se le considera uno de 
+los pioneros en la representación del paisaje 
+colombiano y una figura importante en la transición 
+hacia una pintura más moderna en el país.
+Páramo estudió en la Escuela de Bellas Artes de Bogotá, 
+donde recibió una formación académica tradicional. 
+Sin embargo, su obra evolucionó hacia una 
+interpretación más libre y personal del paisaje, 
+influenciada por las nuevas corrientes artísticas que
+ llegaban de Europa."
+font = SubResource("FontFile_nxmvj")
+font_size = 26
+outline_size = 20
+horizontal_alignment = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ParedIzquierda/Cuadro"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.76551, 4.9402, 9.8498)
+shape = SubResource("BoxShape3D_ro5ex")
+
 [node name="Cuadro2" type="StaticBody3D" parent="ParedIzquierda"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.19196, -1.71842, 0.0321026)
 

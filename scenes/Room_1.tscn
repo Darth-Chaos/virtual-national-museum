@@ -1337,6 +1337,24 @@ spot_range = 4096.0
 spot_angle = 89.0
 spot_angle_attenuation = 0.353554
 
+[node name="SpotLight3D4" type="SpotLight3D" parent="Techo"]
+transform = Transform3D(-0.408843, 0.912444, -0.0171349, 0.00387749, 0.0205124, 0.999782, 0.912597, 0.408687, -0.0119243, -10.8327, 2.28788, 1.56452)
+light_energy = 16.0
+shadow_enabled = true
+shadow_normal_bias = 0.1
+spot_range = 259.785
+spot_angle = 89.0
+spot_angle_attenuation = 0.57435
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="Techo"]
+transform = Transform3D(-0.408843, 0.912444, -0.0171349, 0.00387749, 0.0205124, 0.999782, 0.912597, 0.408687, -0.0119243, 4.26809, 1.30551, 0.970364)
+light_energy = 16.0
+shadow_enabled = true
+shadow_normal_bias = 0.1
+spot_range = 4096.0
+spot_angle = 89.0
+spot_angle_attenuation = 0.353554
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Techo"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 3.05, 0)
 shape = SubResource("BoxShape3D_4cdag")
