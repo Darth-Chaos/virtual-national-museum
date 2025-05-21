@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ce42ihs6fmc1q"
-path.s3tc="res://.godot/imported/Beltrán.jpg-35bd6a75d16d507e1b057ae9459c87fe.s3tc.ctex"
+uid="uid://74qe5fyorjvs"
+path.s3tc="res://.godot/imported/Manzanas.jpg-56c872f202e21f5b788e0b6f59e0bd9a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/pictures/Beltrán.jpg"
-dest_files=["res://.godot/imported/Beltrán.jpg-35bd6a75d16d507e1b057ae9459c87fe.s3tc.ctex"]
+source_file="res://assets/textures/Room1/Manzanas.jpg"
+dest_files=["res://.godot/imported/Manzanas.jpg-56c872f202e21f5b788e0b6f59e0bd9a.s3tc.ctex"]
 
 [params]
 
